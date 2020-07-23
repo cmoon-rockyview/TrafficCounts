@@ -1,0 +1,32 @@
+﻿.HeaderText
+{
+    color:Black;    
+    font-family:Arial;
+    font-weight:bolder;
+    font-size:30px;
+    text-align:center;               
+    margin:1;
+    padding:0;      
+    
+    
+}
+
+.TwpText
+{
+    color:Black;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:30px;
+    text-align:center;
+    margin:1;
+}
+    
+.LocationText
+{
+    color:Black;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:15px;
+    text-align:center;
+    margin:3;
+}

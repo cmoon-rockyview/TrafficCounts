@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DelTCbySiteID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelTCbySiteIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelTCbySiteIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCAxlesDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lane" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bound" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeStart" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeEnd" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeCaptured" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="motorCycles" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="passengerCars" type="xs:int" />
+        <xs:element minOccurs="0" name="twoAxleFourTires" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="bues" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="twoAxlesSixTires" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="threeAxlesSingleUnitTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fourOrMoreAxleSingleUnitTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fourOrLessAxleSingleTrailer" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fiveAleSingleTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="sixOrMoreAxleSingleTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fiveLessAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="sixAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="sevenMoreAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="spMean" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="vpp85" nillable="true" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCAxlesDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTCAxlesDetailsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCSpeedDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lane" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bound" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeStart" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeEnd" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeCaptured" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sp0To10" type="xs:int" />
+        <xs:element minOccurs="0" name="sp10To20" type="xs:int" />
+        <xs:element minOccurs="0" name="sp20To30" type="xs:int" />
+        <xs:element minOccurs="0" name="sp30To40" type="xs:int" />
+        <xs:element minOccurs="0" name="sp40To50" type="xs:int" />
+        <xs:element minOccurs="0" name="sp50To60" type="xs:int" />
+        <xs:element minOccurs="0" name="sp60To70" type="xs:int" />
+        <xs:element minOccurs="0" name="sp70To80" type="xs:int" />
+        <xs:element minOccurs="0" name="sp80To90" type="xs:int" />
+        <xs:element minOccurs="0" name="sp90To100" type="xs:int" />
+        <xs:element minOccurs="0" name="sp100To110" type="xs:int" />
+        <xs:element minOccurs="0" name="sp110To120" type="xs:int" />
+        <xs:element minOccurs="0" name="sp120To130" type="xs:int" />
+        <xs:element minOccurs="0" name="sp130To140" type="xs:int" />
+        <xs:element minOccurs="0" name="sp140To150" type="xs:int" />
+        <xs:element minOccurs="0" name="sp150To160" type="xs:int" />
+        <xs:element minOccurs="0" name="sp160To200" type="xs:int" />
+        <xs:element minOccurs="0" name="spMean" type="xs:double" />
+        <xs:element minOccurs="0" name="Vpp85" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCSpeedDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTCSpeedDetailsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCAxlesSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lane" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bound" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeStart" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeEnd" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeCaptured" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="motorCycles" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="passengerCars" type="xs:int" />
+        <xs:element minOccurs="0" name="twoAxleFourTires" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="bues" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="twoAxlesSixTires" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="threeAxlesSingleUnitTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fourOrMoreAxleSingleUnitTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fourOrLessAxleSingleTrailer" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fiveAleSingleTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="sixOrMoreAxleSingleTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="fiveLessAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="sixAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="sevenMoreAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="spMean" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="vpp85" nillable="true" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCAxlesSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTCAxlesSummaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCSpeedSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lane" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bound" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeStart" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeEnd" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="timeCaptured" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sp0To10" type="xs:int" />
+        <xs:element minOccurs="0" name="sp10To20" type="xs:int" />
+        <xs:element minOccurs="0" name="sp20To30" type="xs:int" />
+        <xs:element minOccurs="0" name="sp30To40" type="xs:int" />
+        <xs:element minOccurs="0" name="sp40To50" type="xs:int" />
+        <xs:element minOccurs="0" name="sp50To60" type="xs:int" />
+        <xs:element minOccurs="0" name="sp60To70" type="xs:int" />
+        <xs:element minOccurs="0" name="sp70To80" type="xs:int" />
+        <xs:element minOccurs="0" name="sp80To90" type="xs:int" />
+        <xs:element minOccurs="0" name="sp90To100" type="xs:int" />
+        <xs:element minOccurs="0" name="sp100To110" type="xs:int" />
+        <xs:element minOccurs="0" name="sp110To120" type="xs:int" />
+        <xs:element minOccurs="0" name="sp120To130" type="xs:int" />
+        <xs:element minOccurs="0" name="sp130To140" type="xs:int" />
+        <xs:element minOccurs="0" name="sp140To150" type="xs:int" />
+        <xs:element minOccurs="0" name="sp150To160" type="xs:int" />
+        <xs:element minOccurs="0" name="sp160To200" type="xs:int" />
+        <xs:element minOccurs="0" name="spMean" type="xs:double" />
+        <xs:element minOccurs="0" name="Vpp85" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCSpeedSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTCSpeedSummaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="site" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="twp" type="xs:int" />
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeStart" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="numberOfVehicle" type="xs:int" />
+        <xs:element minOccurs="0" name="postedLimit" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="percentile85" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="percentageTrucks" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="road1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="road2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="insertedBy" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTCSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTCSummaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

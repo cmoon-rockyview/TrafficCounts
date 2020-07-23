@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TrafficCountModelStoreContainer" CdmEntityContainer="TrafficCountEntities">
+    <EntitySetMapping Name="TCAxlesDetails">
+      <EntityTypeMapping TypeName="TrafficCountModel.TCAxlesDetail">
+        <MappingFragment StoreEntitySet="TCAxlesDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="TimeCaptured" ColumnName="TimeCaptured" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="MotorCycles" ColumnName="MotorCycles" />
+          <ScalarProperty Name="PassengerCars" ColumnName="PassengerCars" />
+          <ScalarProperty Name="TwoAxleFourTires" ColumnName="TwoAxleFourTires" />
+          <ScalarProperty Name="Buses" ColumnName="Buses" />
+          <ScalarProperty Name="TwoAxleSixTires" ColumnName="TwoAxleSixTires" />
+          <ScalarProperty Name="ThreeAxleSingleUnitTruck" ColumnName="ThreeAxleSingleUnitTruck" />
+          <ScalarProperty Name="FourOrMoreAxleSignleUnitTruck" ColumnName="FourOrMoreAxleSignleUnitTruck" />
+          <ScalarProperty Name="FourOrLessAxleSingleTrailerTruck" ColumnName="FourOrLessAxleSingleTrailerTruck" />
+          <ScalarProperty Name="FiveAxleSignleTrailerTruck" ColumnName="FiveAxleSignleTrailerTruck" />
+          <ScalarProperty Name="SixOrMoreAxleSignleTrailerTruck" ColumnName="SixOrMoreAxleSignleTrailerTruck" />
+          <ScalarProperty Name="FiveLessAxleMultiTrailerTruck" ColumnName="FiveLessAxleMultiTrailerTruck" />
+          <ScalarProperty Name="SixAxleMultiTrailerTruck" ColumnName="SixAxleMultiTrailerTruck" />
+          <ScalarProperty Name="SevenMoreAxleMultiTrailerTruck" ColumnName="SevenMoreAxleMultiTrailerTruck" />
+          <ScalarProperty Name="TruckCount" ColumnName="TruckCount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SpMean" ColumnName="SpMean" />
+          <ScalarProperty Name="Vpp85" ColumnName="Vpp85" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="TrafficCountModel.TCAxlesDetail">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="TrafficCountModel.Store.spInsertTCAxlesDetails">
+            <ScalarProperty Name="Vpp85" ParameterName="Vpp85" />
+            <ScalarProperty Name="SpMean" ParameterName="SpMean" />
+            <ScalarProperty Name="SevenMoreAxleMultiTrailerTruck" ParameterName="SevenMoreAxleMultiTrailerTruck" />
+            <ScalarProperty Name="SixAxleMultiTrailerTruck" ParameterName="SixAxleMultiTrailerTruck" />
+            <ScalarProperty Name="FiveLessAxleMultiTrailerTruck" ParameterName="FiveLessAxleMultiTrailerTruck" />
+            <ScalarProperty Name="SixOrMoreAxleSignleTrailerTruck" ParameterName="SixOrMoreAxleSignleTrailerTruck" />
+            <ScalarProperty Name="FiveAxleSignleTrailerTruck" ParameterName="FiveAxleSignleTrailerTruck" />
+            <ScalarProperty Name="FourOrLessAxleSingleTrailerTruck" ParameterName="FourOrLessAxleSingleTrailerTruck" />
+            <ScalarProperty Name="FourOrMoreAxleSignleUnitTruck" ParameterName="FourOrMoreAxleSignleUnitTruck" />
+            <ScalarProperty Name="ThreeAxleSingleUnitTruck" ParameterName="ThreeAxleSingleUnitTruck" />
+            <ScalarProperty Name="TwoAxleSixTires" ParameterName="TwoAxleSixTires" />
+            <ScalarProperty Name="Buses" ParameterName="Buses" />
+            <ScalarProperty Name="TwoAxleFourTires" ParameterName="TwoAxleFourTires" />
+            <ScalarProperty Name="PassengerCars" ParameterName="PassengerCars" />
+            <ScalarProperty Name="MotorCycles" ParameterName="MotorCycles" />
+            <ScalarProperty Name="Location" ParameterName="Location" />
+            <ScalarProperty Name="TimeCaptured" ParameterName="TimeCaptured" />
+            <ScalarProperty Name="TimeEnd" ParameterName="TimeEnd" />
+            <ScalarProperty Name="TimeStart" ParameterName="TimeStart" />
+            <ScalarProperty Name="Bound" ParameterName="Bound" />
+            <ScalarProperty Name="Lane" ParameterName="Lane" />
+            <ScalarProperty Name="SiteID" ParameterName="SiteID" />
+            <ScalarProperty Name="ID" ParameterName="ID" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCAxlesSummaries">
+      <EntityTypeMapping TypeName="TrafficCountModel.TCAxlesSummary">
+        <MappingFragment StoreEntitySet="TCAxlesSummary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="TimeCaptured" ColumnName="TimeCaptured" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="MotorCycles" ColumnName="MotorCycles" />
+          <ScalarProperty Name="PassengerCars" ColumnName="PassengerCars" />
+          <ScalarProperty Name="TwoAxleFourTires" ColumnName="TwoAxleFourTires" />
+          <ScalarProperty Name="Buses" ColumnName="Buses" />
+          <ScalarProperty Name="TwoAxleSixTires" ColumnName="TwoAxleSixTires" />
+          <ScalarProperty Name="ThreeAxleSingleUnitTruck" ColumnName="ThreeAxleSingleUnitTruck" />
+          <ScalarProperty Name="FourOrMoreAxleSignleUnitTruck" ColumnName="FourOrMoreAxleSignleUnitTruck" />
+          <ScalarProperty Name="FourOrLessAxleSingleTrailerTruck" ColumnName="FourOrLessAxleSingleTrailerTruck" />
+          <ScalarProperty Name="FiveAxleSignleTrailerTruck" ColumnName="FiveAxleSignleTrailerTruck" />
+          <ScalarProperty Name="SixOrMoreAxleSignleTrailerTruck" ColumnName="SixOrMoreAxleSignleTrailerTruck" />
+          <ScalarProperty Name="FiveLessAxleMultiTrailerTruck" ColumnName="FiveLessAxleMultiTrailerTruck" />
+          <ScalarProperty Name="SixAxleMultiTrailerTruck" ColumnName="SixAxleMultiTrailerTruck" />
+          <ScalarProperty Name="SevenMoreAxleMultiTrailerTruck" ColumnName="SevenMoreAxleMultiTrailerTruck" />
+          <ScalarProperty Name="TruckCount" ColumnName="TruckCount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SpMean" ColumnName="SpMean" />
+          <ScalarProperty Name="Vpp85" ColumnName="Vpp85" />
+          <ScalarProperty Name="oldSiteID" ColumnName="oldSiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="TrafficCountModel.TCAxlesSummary">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="TrafficCountModel.Store.spInsertTCAxlesSummary">
+            <ScalarProperty Name="Vpp85" ParameterName="Vpp85" />
+            <ScalarProperty Name="SpMean" ParameterName="SpMean" />
+            <ScalarProperty Name="SevenMoreAxleMultiTrailerTruck" ParameterName="SevenMoreAxleMultiTrailerTruck" />
+            <ScalarProperty Name="SixAxleMultiTrailerTruck" ParameterName="SixAxleMultiTrailerTruck" />
+            <ScalarProperty Name="FiveLessAxleMultiTrailerTruck" ParameterName="FiveLessAxleMultiTrailerTruck" />
+            <ScalarProperty Name="SixOrMoreAxleSignleTrailerTruck" ParameterName="SixOrMoreAxleSignleTrailerTruck" />
+            <ScalarProperty Name="FiveAxleSignleTrailerTruck" ParameterName="FiveAxleSignleTrailerTruck" />
+            <ScalarProperty Name="FourOrLessAxleSingleTrailerTruck" ParameterName="FourOrLessAxleSingleTrailerTruck" />
+            <ScalarProperty Name="FourOrMoreAxleSignleUnitTruck" ParameterName="FourOrMoreAxleSignleUnitTruck" />
+            <ScalarProperty Name="ThreeAxleSingleUnitTruck" ParameterName="ThreeAxleSingleUnitTruck" />
+            <ScalarProperty Name="TwoAxleSixTires" ParameterName="TwoAxleSixTires" />
+            <ScalarProperty Name="Buses" ParameterName="Buses" />
+            <ScalarProperty Name="TwoAxleFourTires" ParameterName="TwoAxleFourTires" />
+            <ScalarProperty Name="PassengerCars" ParameterName="PassengerCars" />
+            <ScalarProperty Name="MotorCycles" ParameterName="MotorCycles" />
+            <ScalarProperty Name="Location" ParameterName="Location" />
+            <ScalarProperty Name="TimeCaptured" ParameterName="TimeCaptured" />
+            <ScalarProperty Name="TimeEnd" ParameterName="TimeEnd" />
+            <ScalarProperty Name="TimeStart" ParameterName="TimeStart" />
+            <ScalarProperty Name="Bound" ParameterName="Bound" />
+            <ScalarProperty Name="Lane" ParameterName="Lane" />
+            <ScalarProperty Name="SiteID" ParameterName="SiteID" />
+            <ScalarProperty Name="ID" ParameterName="ID" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCSpeedDetails">
+      <EntityTypeMapping TypeName="TrafficCountModel.TCSpeedDetail">
+        <MappingFragment StoreEntitySet="TCSpeedDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="TimeCaptured" ColumnName="TimeCaptured" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Sp0To10" ColumnName="Sp0To10" />
+          <ScalarProperty Name="Sp10To20" ColumnName="Sp10To20" />
+          <ScalarProperty Name="Sp20To30" ColumnName="Sp20To30" />
+          <ScalarProperty Name="Sp30To40" ColumnName="Sp30To40" />
+          <ScalarProperty Name="Sp40To50" ColumnName="Sp40To50" />
+          <ScalarProperty Name="Sp50To60" ColumnName="Sp50To60" />
+          <ScalarProperty Name="Sp60To70" ColumnName="Sp60To70" />
+          <ScalarProperty Name="Sp70To80" ColumnName="Sp70To80" />
+          <ScalarProperty Name="Sp80To90" ColumnName="Sp80To90" />
+          <ScalarProperty Name="Sp90To100" ColumnName="Sp90To100" />
+          <ScalarProperty Name="Sp100To110" ColumnName="Sp100To110" />
+          <ScalarProperty Name="Sp110To120" ColumnName="Sp110To120" />
+          <ScalarProperty Name="Sp120To130" ColumnName="Sp120To130" />
+          <ScalarProperty Name="Sp130To140" ColumnName="Sp130To140" />
+          <ScalarProperty Name="Sp140To150" ColumnName="Sp140To150" />
+          <ScalarProperty Name="Sp150To160" ColumnName="Sp150To160" />
+          <ScalarProperty Name="Sp160To200" ColumnName="Sp160To200" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SpMean" ColumnName="SpMean" />
+          <ScalarProperty Name="Vpp85" ColumnName="Vpp85" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="TrafficCountModel.TCSpeedDetail">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="TrafficCountModel.Store.spInsertTCSpeedDetails">
+            <ScalarProperty Name="Vpp85" ParameterName="Vpp85" />
+            <ScalarProperty Name="SpMean" ParameterName="SpMean" />
+            <ScalarProperty Name="Sp160To200" ParameterName="Sp160To200" />
+            <ScalarProperty Name="Sp150To160" ParameterName="Sp150To160" />
+            <ScalarProperty Name="Sp140To150" ParameterName="Sp140To150" />
+            <ScalarProperty Name="Sp130To140" ParameterName="Sp130To140" />
+            <ScalarProperty Name="Sp120To130" ParameterName="Sp120To130" />
+            <ScalarProperty Name="Sp110To120" ParameterName="Sp110To120" />
+            <ScalarProperty Name="Sp100To110" ParameterName="Sp100To110" />
+            <ScalarProperty Name="Sp90To100" ParameterName="Sp90To100" />
+            <ScalarProperty Name="Sp80To90" ParameterName="Sp80To90" />
+            <ScalarProperty Name="Sp70To80" ParameterName="Sp70To80" />
+            <ScalarProperty Name="Sp60To70" ParameterName="Sp60To70" />
+            <ScalarProperty Name="Sp50To60" ParameterName="Sp50To60" />
+            <ScalarProperty Name="Sp40To50" ParameterName="Sp40To50" />
+            <ScalarProperty Name="Sp30To40" ParameterName="Sp30To40" />
+            <ScalarProperty Name="Sp20To30" ParameterName="Sp20To30" />
+            <ScalarProperty Name="Sp10To20" ParameterName="Sp10To20" />
+            <ScalarProperty Name="Sp0To10" ParameterName="Sp0To10" />
+            <ScalarProperty Name="Location" ParameterName="Location" />
+            <ScalarProperty Name="TimeCaptured" ParameterName="TimeCaptured" />
+            <ScalarProperty Name="TimeEnd" ParameterName="TimeEnd" />
+            <ScalarProperty Name="TimeStart" ParameterName="TimeStart" />
+            <ScalarProperty Name="Bound" ParameterName="Bound" />
+            <ScalarProperty Name="Lane" ParameterName="Lane" />
+            <ScalarProperty Name="SiteID" ParameterName="SiteID" />
+            <ScalarProperty Name="ID" ParameterName="ID" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCSpeedSummaries">
+      <EntityTypeMapping TypeName="TrafficCountModel.TCSpeedSummary">
+        <MappingFragment StoreEntitySet="TCSpeedSummary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="TimeCaptured" ColumnName="TimeCaptured" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Sp0To10" ColumnName="Sp0To10" />
+          <ScalarProperty Name="Sp10To20" ColumnName="Sp10To20" />
+          <ScalarProperty Name="Sp20To30" ColumnName="Sp20To30" />
+          <ScalarProperty Name="Sp30To40" ColumnName="Sp30To40" />
+          <ScalarProperty Name="Sp40To50" ColumnName="Sp40To50" />
+          <ScalarProperty Name="Sp50To60" ColumnName="Sp50To60" />
+          <ScalarProperty Name="Sp60To70" ColumnName="Sp60To70" />
+          <ScalarProperty Name="Sp70To80" ColumnName="Sp70To80" />
+          <ScalarProperty Name="Sp80To90" ColumnName="Sp80To90" />
+          <ScalarProperty Name="Sp90To100" ColumnName="Sp90To100" />
+          <ScalarProperty Name="Sp100To110" ColumnName="Sp100To110" />
+          <ScalarProperty Name="Sp110To120" ColumnName="Sp110To120" />
+          <ScalarProperty Name="Sp120To130" ColumnName="Sp120To130" />
+          <ScalarProperty Name="Sp130To140" ColumnName="Sp130To140" />
+          <ScalarProperty Name="Sp140To150" ColumnName="Sp140To150" />
+          <ScalarProperty Name="Sp150To160" ColumnName="Sp150To160" />
+          <ScalarProperty Name="Sp160To200" ColumnName="Sp160To200" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SpMean" ColumnName="SpMean" />
+          <ScalarProperty Name="Vpp85" ColumnName="Vpp85" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="TrafficCountModel.TCSpeedSummary">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="TrafficCountModel.Store.spInsertTCSpeedSummary">
+            <ScalarProperty Name="Vpp85" ParameterName="Vpp85" />
+            <ScalarProperty Name="SpMean" ParameterName="SpMean" />
+            <ScalarProperty Name="Sp160To200" ParameterName="Sp160To200" />
+            <ScalarProperty Name="Sp150To160" ParameterName="Sp150To160" />
+            <ScalarProperty Name="Sp140To150" ParameterName="Sp140To150" />
+            <ScalarProperty Name="Sp130To140" ParameterName="Sp130To140" />
+            <ScalarProperty Name="Sp120To130" ParameterName="Sp120To130" />
+            <ScalarProperty Name="Sp110To120" ParameterName="Sp110To120" />
+            <ScalarProperty Name="Sp100To110" ParameterName="Sp100To110" />
+            <ScalarProperty Name="Sp90To100" ParameterName="Sp90To100" />
+            <ScalarProperty Name="Sp80To90" ParameterName="Sp80To90" />
+            <ScalarProperty Name="Sp70To80" ParameterName="Sp70To80" />
+            <ScalarProperty Name="Sp60To70" ParameterName="Sp60To70" />
+            <ScalarProperty Name="Sp50To60" ParameterName="Sp50To60" />
+            <ScalarProperty Name="Sp40To50" ParameterName="Sp40To50" />
+            <ScalarProperty Name="Sp30To40" ParameterName="Sp30To40" />
+            <ScalarProperty Name="Sp20To30" ParameterName="Sp20To30" />
+            <ScalarProperty Name="Sp10To20" ParameterName="Sp10To20" />
+            <ScalarProperty Name="Sp0To10" ParameterName="Sp0To10" />
+            <ScalarProperty Name="Location" ParameterName="Location" />
+            <ScalarProperty Name="TimeCaptured" ParameterName="TimeCaptured" />
+            <ScalarProperty Name="TimeEnd" ParameterName="TimeEnd" />
+            <ScalarProperty Name="TimeStart" ParameterName="TimeStart" />
+            <ScalarProperty Name="Bound" ParameterName="Bound" />
+            <ScalarProperty Name="Lane" ParameterName="Lane" />
+            <ScalarProperty Name="SiteID" ParameterName="SiteID" />
+            <ScalarProperty Name="ID" ParameterName="ID" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCSummaries">
+      <EntityTypeMapping TypeName="TrafficCountModel.TCSummary">
+        <MappingFragment StoreEntitySet="TCSummary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="vchSiteID" ColumnName="vchSiteID" />
+          <ScalarProperty Name="calcYearOfCount" ColumnName="calcYearOfCount" />
+          <ScalarProperty Name="intTWP" ColumnName="intTWP" />
+          <ScalarProperty Name="vchLocation" ColumnName="vchLocation" />
+          <ScalarProperty Name="dteDateOfCount" ColumnName="dteDateOfCount" />
+          <ScalarProperty Name="intNumofVehicles" ColumnName="intNumofVehicles" />
+          <ScalarProperty Name="vchTypeofCounter" ColumnName="vchTypeofCounter" />
+          <ScalarProperty Name="vchPostedLimit" ColumnName="vchPostedLimit" />
+          <ScalarProperty Name="vch85Percentile" ColumnName="vch85Percentile" />
+          <ScalarProperty Name="vchPercentageTrucks" ColumnName="vchPercentageTrucks" />
+          <ScalarProperty Name="Road1" ColumnName="Road1" />
+          <ScalarProperty Name="Road2" ColumnName="Road2" />
+          <ScalarProperty Name="Dir" ColumnName="Dir" />
+          <ScalarProperty Name="LinkToHistory" ColumnName="LinkToHistory" />
+          <ScalarProperty Name="LinkToSummary" ColumnName="LinkToSummary" />
+          <ScalarProperty Name="LinkToExcel" ColumnName="LinkToExcel" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="History" ColumnName="History" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="LegalDesc" ColumnName="LegalDesc" />
+          <ScalarProperty Name="Shape" ColumnName="Shape" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrafficCountSensors">
+      <EntityTypeMapping TypeName="TrafficCountModel.TrafficCountSensor">
+        <MappingFragment StoreEntitySet="TrafficCountSensors">
+          <ScalarProperty Name="ogr_fid" ColumnName="ogr_fid" />
+          <ScalarProperty Name="Shape" ColumnName="Shape" />
+          <ScalarProperty Name="road_1" ColumnName="road_1" />
+          <ScalarProperty Name="road_2" ColumnName="road_2" />
+          <ScalarProperty Name="distance_m" ColumnName="distance_m" />
+          <ScalarProperty Name="linktohistory" ColumnName="linktohistory" />
+          <ScalarProperty Name="direction" ColumnName="direction" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spDelTCBySiteID" FunctionName="TrafficCountModel.Store.spDelTCBySiteID" />
+    <FunctionImportMapping FunctionImportName="spInsertTCAxlesDetails" FunctionName="TrafficCountModel.Store.spInsertTCAxlesDetails" />
+    <FunctionImportMapping FunctionImportName="spInsertTCAxlesSummary" FunctionName="TrafficCountModel.Store.spInsertTCAxlesSummary" />
+    <FunctionImportMapping FunctionImportName="spInsertTCSpeedDetails" FunctionName="TrafficCountModel.Store.spInsertTCSpeedDetails" />
+    <FunctionImportMapping FunctionImportName="spInsertTCSpeedSummary" FunctionName="TrafficCountModel.Store.spInsertTCSpeedSummary" />
+    <FunctionImportMapping FunctionImportName="spInsertTCSummary" FunctionName="TrafficCountModel.Store.spInsertTCSummary" />
+    <FunctionImportMapping FunctionImportName="spTCAxlesDetails" FunctionName="TrafficCountModel.Store.spTCAxlesDetails" />
+    <FunctionImportMapping FunctionImportName="spTCAxlesSummaryBySite" FunctionName="TrafficCountModel.Store.spTCAxlesSummaryBySite">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrafficCountModel.spTCAxlesSummaryBySite_Result">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="TimeCaptured" ColumnName="TimeCaptured" />
+          <ScalarProperty Name="MotorCycles" ColumnName="MotorCycles" />
+          <ScalarProperty Name="PassengerCars" ColumnName="PassengerCars" />
+          <ScalarProperty Name="TwoAxleFourTires" ColumnName="TwoAxleFourTires" />
+          <ScalarProperty Name="Buses" ColumnName="Buses" />
+          <ScalarProperty Name="TwoAxleSixTires" ColumnName="TwoAxleSixTires" />
+          <ScalarProperty Name="ThreeAxleSingleUnitTruck" ColumnName="ThreeAxleSingleUnitTruck" />
+          <ScalarProperty Name="FourOrMoreAxleSignleUnitTruck" ColumnName="FourOrMoreAxleSignleUnitTruck" />
+          <ScalarProperty Name="FourOrLessAxleSingleTrailerTruck" ColumnName="FourOrLessAxleSingleTrailerTruck" />
+          <ScalarProperty Name="FiveAxleSignleTrailerTruck" ColumnName="FiveAxleSignleTrailerTruck" />
+          <ScalarProperty Name="SixOrMoreAxleSignleTrailerTruck" ColumnName="SixOrMoreAxleSignleTrailerTruck" />
+          <ScalarProperty Name="FiveLessAxleMultiTrailerTruck" ColumnName="FiveLessAxleMultiTrailerTruck" />
+          <ScalarProperty Name="SixAxleMultiTrailerTruck" ColumnName="SixAxleMultiTrailerTruck" />
+          <ScalarProperty Name="SevenMoreAxleMultiTrailerTruck" ColumnName="SevenMoreAxleMultiTrailerTruck" />
+          <ScalarProperty Name="TruckCount" ColumnName="TruckCount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SpMean" ColumnName="SpMean" />
+          <ScalarProperty Name="Vpp85" ColumnName="Vpp85" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spTCSpeedDetails" FunctionName="TrafficCountModel.Store.spTCSpeedDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrafficCountModel.spTCSpeedDetails_Result">
+          <ScalarProperty Name="TimeCaptured" ColumnName="TimeCaptured" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Sp0To10" ColumnName="Sp0To10" />
+          <ScalarProperty Name="Sp10To20" ColumnName="Sp10To20" />
+          <ScalarProperty Name="Sp20To30" ColumnName="Sp20To30" />
+          <ScalarProperty Name="Sp30To40" ColumnName="Sp30To40" />
+          <ScalarProperty Name="Sp40To50" ColumnName="Sp40To50" />
+          <ScalarProperty Name="Sp50To60" ColumnName="Sp50To60" />
+          <ScalarProperty Name="Sp60To70" ColumnName="Sp60To70" />
+          <ScalarProperty Name="Sp70To80" ColumnName="Sp70To80" />
+          <ScalarProperty Name="Sp80To90" ColumnName="Sp80To90" />
+          <ScalarProperty Name="Sp90To100" ColumnName="Sp90To100" />
+          <ScalarProperty Name="Sp100To110" ColumnName="Sp100To110" />
+          <ScalarProperty Name="Sp110To120" ColumnName="Sp110To120" />
+          <ScalarProperty Name="Sp120To130" ColumnName="Sp120To130" />
+          <ScalarProperty Name="Sp130To140" ColumnName="Sp130To140" />
+          <ScalarProperty Name="Sp140To150" ColumnName="Sp140To150" />
+          <ScalarProperty Name="Sp150To160" ColumnName="Sp150To160" />
+          <ScalarProperty Name="Sp160To200" ColumnName="Sp160To200" />
+          <ScalarProperty Name="SpMean" ColumnName="SpMean" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spTCSpeedSummaryBySite" FunctionName="TrafficCountModel.Store.spTCSpeedSummaryBySite">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrafficCountModel.spTCSpeedSummaryBySite_Result">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+          <ScalarProperty Name="TimeCaptured" ColumnName="TimeCaptured" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Sp0To10" ColumnName="Sp0To10" />
+          <ScalarProperty Name="Sp10To20" ColumnName="Sp10To20" />
+          <ScalarProperty Name="Sp20To30" ColumnName="Sp20To30" />
+          <ScalarProperty Name="Sp30To40" ColumnName="Sp30To40" />
+          <ScalarProperty Name="Sp40To50" ColumnName="Sp40To50" />
+          <ScalarProperty Name="Sp50To60" ColumnName="Sp50To60" />
+          <ScalarProperty Name="Sp60To70" ColumnName="Sp60To70" />
+          <ScalarProperty Name="Sp70To80" ColumnName="Sp70To80" />
+          <ScalarProperty Name="Sp80To90" ColumnName="Sp80To90" />
+          <ScalarProperty Name="Sp90To100" ColumnName="Sp90To100" />
+          <ScalarProperty Name="Sp100To110" ColumnName="Sp100To110" />
+          <ScalarProperty Name="Sp110To120" ColumnName="Sp110To120" />
+          <ScalarProperty Name="Sp120To130" ColumnName="Sp120To130" />
+          <ScalarProperty Name="Sp130To140" ColumnName="Sp130To140" />
+          <ScalarProperty Name="Sp140To150" ColumnName="Sp140To150" />
+          <ScalarProperty Name="Sp150To160" ColumnName="Sp150To160" />
+          <ScalarProperty Name="Sp160To200" ColumnName="Sp160To200" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SpMean" ColumnName="SpMean" />
+          <ScalarProperty Name="Vpp85" ColumnName="Vpp85" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spTCSummaryByLoc" FunctionName="TrafficCountModel.Store.spTCSummaryByLoc">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrafficCountModel.spTCSummaryByLoc_Result">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TWP" ColumnName="TWP" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="NumofVolume" ColumnName="NumofVolume" />
+          <ScalarProperty Name="PostedLimit" ColumnName="PostedLimit" />
+          <ScalarProperty Name="Percentile85" ColumnName="Percentile85" />
+          <ScalarProperty Name="PercentageTrucks" ColumnName="PercentageTrucks" />
+          <ScalarProperty Name="LegalDesc" ColumnName="LegalDesc" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="LinkToSummary" ColumnName="LinkToSummary" />
+          <ScalarProperty Name="LinkToHistory" ColumnName="LinkToHistory" />
+          <ScalarProperty Name="Road1" ColumnName="Road1" />
+          <ScalarProperty Name="Road2" ColumnName="Road2" />
+          <ScalarProperty Name="Dir" ColumnName="Dir" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spTCSummaryBySite" FunctionName="TrafficCountModel.Store.spTCSummaryBySite">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrafficCountModel.spTCSummaryBySite_Result">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TWP" ColumnName="TWP" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="NumofVolume" ColumnName="NumofVolume" />
+          <ScalarProperty Name="PostedLimit" ColumnName="PostedLimit" />
+          <ScalarProperty Name="Percentile85" ColumnName="Percentile85" />
+          <ScalarProperty Name="PercentageTrucks" ColumnName="PercentageTrucks" />
+          <ScalarProperty Name="LegalDesc" ColumnName="LegalDesc" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="LinkToSummary" ColumnName="LinkToSummary" />
+          <ScalarProperty Name="LinkToHistory" ColumnName="LinkToHistory" />
+          <ScalarProperty Name="Road1" ColumnName="Road1" />
+          <ScalarProperty Name="Road2" ColumnName="Road2" />
+          <ScalarProperty Name="Dir" ColumnName="Dir" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spTCSummaryOneBySite" FunctionName="TrafficCountModel.Store.spTCSummaryOneBySite">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrafficCountModel.spTCSummaryOneBySite_Result">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TWP" ColumnName="TWP" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="NumofVolume" ColumnName="NumofVolume" />
+          <ScalarProperty Name="PostedLimit" ColumnName="PostedLimit" />
+          <ScalarProperty Name="Percentile85" ColumnName="Percentile85" />
+          <ScalarProperty Name="PercentageTrucks" ColumnName="PercentageTrucks" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="LegalDesc" ColumnName="LegalDesc" />
+          <ScalarProperty Name="LinktoSummary" ColumnName="LinktoSummary" />
+          <ScalarProperty Name="LinkToHistory" ColumnName="LinkToHistory" />
+          <ScalarProperty Name="Road1" ColumnName="Road1" />
+          <ScalarProperty Name="Road2" ColumnName="Road2" />
+          <ScalarProperty Name="Dir" ColumnName="Dir" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spUpdateTCSummaryLocation" FunctionName="TrafficCountModel.Store.spUpdateTCSummaryLocation" />
+  </EntityContainerMapping>
+</Mapping>

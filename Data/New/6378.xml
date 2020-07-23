@@ -1,0 +1,2789 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<Report name="Report">
+  <Header name="Header">
+    <Globals name="Globals">
+      <ReportId name="Report Id">CustomList-31</ReportId>
+      <Descriptor name="Descriptor">Rocky View County Class &amp; Speed XML Example</Descriptor>
+      <CreatedBy name="Created by">MetroCount Traffic Executive</CreatedBy>
+      <CreationTimeUTC name="Creation Time (UTC)">2020-07-08T19:57:59</CreationTimeUTC>
+      <Legal name="Legal">Copyright (c)1997 - 2019 MetroCount</Legal>
+      <Graphic name="Graphic"></Graphic>
+      <Language name="Language">English</Language>
+      <Country name="Country">United States</Country>
+      <TimeZone name="Time">UTC + -360 min</TimeZone>
+      <CreateVersion name="Create Version">5.0.7.0</CreateVersion>
+      <Metric name="Metric">Metric</Metric>
+      <SpeedUnit name="Speed Unit">km/h</SpeedUnit>
+      <LengthUnit name="Length Unit">metre</LengthUnit>
+      <MassUnit name="Mass Unit">tonne</MassUnit>
+    </Globals>
+    <Dataset name="Dataset">
+      <SiteName name="Site Name">6378</SiteName>
+      <SiteAttribute name="Site Attribute"></SiteAttribute>
+      <FileName name="File Name">K:\I &amp; O\307-2 Traffic Counts\Rawdata\637808Jul2020.EC0</FileName>
+      <FileType name="File Type">Plus </FileType>
+      <Algorithm name="Algorithm">Factory default axle</Algorithm>
+      <Description name="Description">INVERLAKE RD WEST OF BOUNDARY RD [80 KM/H]</Description>
+      <Lane name="Lane">0</Lane>
+      <Direction name="Direction">2</Direction>
+      <DirText name="Direction Text">2 - East bound, A trigger first.</DirText>
+      <LayoutText name="Layout Text">Axle sensors - Paired (Class/Speed/Count)</LayoutText>
+      <SetupTime name="Setup Time">2020-07-03T07:18:16</SetupTime>
+      <StartTime name="Start Time">2020-07-04T00:00:00</StartTime>
+      <FinishTime name="Finish Time">2020-07-08T13:19:34</FinishTime>
+      <Operator name="Operator">JS</Operator>
+      <Configuration name="Configuration">80 00 14 6a 6a 00 00 00 00 00</Configuration>
+    </Dataset>
+    <Profile name="Profile">
+      <Name name="Name">Default Profile</Name>
+      <Title name="Title">MetroCount Traffic Executive</Title>
+      <GraphicLogo name="Graphic Logo"></GraphicLogo>
+      <HeadLine name="Header"></HeadLine>
+      <FootLine name="Footer"></FootLine>
+      <Percentile1 name="Percentile 1">85</Percentile1>
+      <Percentile2 name="Percentile 2">95</Percentile2>
+      <Pace name="Pace">20</Pace>
+      <FilterStart name="Filter Start">2020-07-05T00:00:00</FilterStart>
+      <FilterEnd name="Filter End">2020-07-06T00:00:00</FilterEnd>
+      <ClassScheme name="Class Scheme">Scheme F2</ClassScheme>
+      <Filter name="F">Cls(1-13) Dir(NESW) Sp(10,160) Headway(]0) Span(0 - 100) Lane(0-16)</Filter>
+      <LoSpeed name="Low Speed">10</LoSpeed>
+      <HiSpeed name="High Speed">160</HiSpeed>
+      <PostedLimit name="Posted Limit">80 </PostedLimit>
+      <SpeedLimits name="Speed Limits">80 80 80 80 80 80 80 80 80 80 </SpeedLimits>
+      <Separation name="Separation">0.000</Separation>
+      <SeparationType name="Separation Type">Headway</SeparationType>
+      <Direction name="Direction">North East South West</Direction>
+      <EncodedDirection name="Encoded Direction">15</EncodedDirection>
+    </Profile>
+  </Header>
+  <UserElements name="User Elements">
+    <UserElement0 name="UserElement0">Content0</UserElement0>
+    <UserElement1 name="UserElement1">Content1</UserElement1>
+    <UserElement2 name="UserElement2">Content2</UserElement2>
+    <UserElement3 name="UserElement3">Content3</UserElement3>
+    <UserElement4 name="UserElement4">Content4</UserElement4>
+    <UserElement5 name="UserElement5">Content5</UserElement5>
+    <UserElement6 name="UserElement6">Content6</UserElement6>
+    <UserElement7 name="UserElement7">Content7</UserElement7>
+    <UserElement8 name="UserElement8">Content8</UserElement8>
+    <UserElement9 name="UserElement9">Content9</UserElement9>
+  </UserElements>
+  <Translation>
+    <Column name="Column"></Column>
+    <Legend name="Legend"></Legend>
+    <WarnMultiFile name="Multiple Files! See Header sheet."></WarnMultiFile>
+  </Translation>
+  <FieldOrder>
+    <F00>
+      <Position>00</Position>
+      <VarName>FA_tMIL</VarName>
+      <ColumnName>FA_tMIL [--</ColumnName>
+      <Description>24-hour time (0000 - 2359)</Description>
+      <ColHead0>Time</ColHead0>
+      <ColHead1>[--</ColHead1>
+      <ColHead2></ColHead2>
+    </F00>
+    <F01>
+      <Position>01</Position>
+      <VarName>FA_DIRCODE</VarName>
+      <ColumnName>FA_DIRCODE</ColumnName>
+      <Description>Direction code</Description>
+      <ColHead0>Dir</ColHead0>
+      <ColHead1></ColHead1>
+      <ColHead2></ColHead2>
+    </F01>
+    <F02>
+      <Position>02</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 1</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>1</ColHead1>
+      <ColHead2></ColHead2>
+    </F02>
+    <F03>
+      <Position>03</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 2</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>2</ColHead1>
+      <ColHead2></ColHead2>
+    </F03>
+    <F04>
+      <Position>04</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 3</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>3</ColHead1>
+      <ColHead2></ColHead2>
+    </F04>
+    <F05>
+      <Position>05</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 4</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>4</ColHead1>
+      <ColHead2></ColHead2>
+    </F05>
+    <F06>
+      <Position>06</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 5</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>5</ColHead1>
+      <ColHead2></ColHead2>
+    </F06>
+    <F07>
+      <Position>07</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 6</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>6</ColHead1>
+      <ColHead2></ColHead2>
+    </F07>
+    <F08>
+      <Position>08</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 7</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>7</ColHead1>
+      <ColHead2></ColHead2>
+    </F08>
+    <F09>
+      <Position>09</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 8</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>8</ColHead1>
+      <ColHead2></ColHead2>
+    </F09>
+    <F10>
+      <Position>10</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 9</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>9</ColHead1>
+      <ColHead2></ColHead2>
+    </F10>
+    <F11>
+      <Position>11</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 10</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>10</ColHead1>
+      <ColHead2></ColHead2>
+    </F11>
+    <F12>
+      <Position>12</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 11</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>11</ColHead1>
+      <ColHead2></ColHead2>
+    </F12>
+    <F13>
+      <Position>13</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 12</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>12</ColHead1>
+      <ColHead2></ColHead2>
+    </F13>
+    <F14>
+      <Position>14</Position>
+      <VarName>FA_nCLSBIN</VarName>
+      <ColumnName>FA_nCLSBIN 13</ColumnName>
+      <Description>Class totals</Description>
+      <ColHead0>Cls</ColHead0>
+      <ColHead1>13</ColHead1>
+      <ColHead2></ColHead2>
+    </F14>
+    <F15>
+      <Position>15</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 0 10</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>0</ColHead1>
+      <ColHead2>10</ColHead2>
+    </F15>
+    <F16>
+      <Position>16</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 10 20</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>10</ColHead1>
+      <ColHead2>20</ColHead2>
+    </F16>
+    <F17>
+      <Position>17</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 20 30</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>20</ColHead1>
+      <ColHead2>30</ColHead2>
+    </F17>
+    <F18>
+      <Position>18</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 30 40</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>30</ColHead1>
+      <ColHead2>40</ColHead2>
+    </F18>
+    <F19>
+      <Position>19</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 40 50</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>40</ColHead1>
+      <ColHead2>50</ColHead2>
+    </F19>
+    <F20>
+      <Position>20</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 50 60</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>50</ColHead1>
+      <ColHead2>60</ColHead2>
+    </F20>
+    <F21>
+      <Position>21</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 60 70</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>60</ColHead1>
+      <ColHead2>70</ColHead2>
+    </F21>
+    <F22>
+      <Position>22</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 70 80</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>70</ColHead1>
+      <ColHead2>80</ColHead2>
+    </F22>
+    <F23>
+      <Position>23</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 80 90</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>80</ColHead1>
+      <ColHead2>90</ColHead2>
+    </F23>
+    <F24>
+      <Position>24</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 90 100</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>90</ColHead1>
+      <ColHead2>100</ColHead2>
+    </F24>
+    <F25>
+      <Position>25</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 100 110</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>100</ColHead1>
+      <ColHead2>110</ColHead2>
+    </F25>
+    <F26>
+      <Position>26</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 110 120</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>110</ColHead1>
+      <ColHead2>120</ColHead2>
+    </F26>
+    <F27>
+      <Position>27</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 120 130</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>120</ColHead1>
+      <ColHead2>130</ColHead2>
+    </F27>
+    <F28>
+      <Position>28</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 130 140</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>130</ColHead1>
+      <ColHead2>140</ColHead2>
+    </F28>
+    <F29>
+      <Position>29</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 140 150</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>140</ColHead1>
+      <ColHead2>150</ColHead2>
+    </F29>
+    <F30>
+      <Position>30</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 150 160</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>150</ColHead1>
+      <ColHead2>160</ColHead2>
+    </F30>
+    <F31>
+      <Position>31</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 160 170</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>160</ColHead1>
+      <ColHead2>170</ColHead2>
+    </F31>
+    <F32>
+      <Position>32</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 170 180</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>170</ColHead1>
+      <ColHead2>180</ColHead2>
+    </F32>
+    <F33>
+      <Position>33</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 180 190</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>180</ColHead1>
+      <ColHead2>190</ColHead2>
+    </F33>
+    <F34>
+      <Position>34</Position>
+      <VarName>FA_nVELBIN</VarName>
+      <ColumnName>FA_nVELBIN 190 200</ColumnName>
+      <Description>Speed bin totals</Description>
+      <ColHead0>Vbin</ColHead0>
+      <ColHead1>190</ColHead1>
+      <ColHead2>200</ColHead2>
+    </F34>
+    <F35>
+      <Position>35</Position>
+      <VarName>FA_nTOT</VarName>
+      <ColumnName>FA_nTOT</ColumnName>
+      <Description>Number in time step</Description>
+      <ColHead0>Total</ColHead0>
+      <ColHead1></ColHead1>
+      <ColHead2></ColHead2>
+    </F35>
+    <F36>
+      <Position>36</Position>
+      <VarName>FA_vMEAN</VarName>
+      <ColumnName>FA_vMEAN</ColumnName>
+      <Description>Average speed</Description>
+      <ColHead0>Mean</ColHead0>
+      <ColHead1></ColHead1>
+      <ColHead2></ColHead2>
+    </F36>
+    <F37>
+      <Position>37</Position>
+      <VarName>FA_vPP</VarName>
+      <ColumnName>FA_vPP 85</ColumnName>
+      <Description>Percentile speed</Description>
+      <ColHead0>Vpp</ColHead0>
+      <ColHead1>85</ColHead1>
+      <ColHead2></ColHead2>
+    </F37>
+  </FieldOrder>
+  <Data name="Data">
+    <Page>
+      <Title>Sunday, July 05, 2020</Title>
+      <TabName>5Jul20</TabName>
+      <IsoDate>2020-07-05T00:00:00</IsoDate>
+      <Step>
+        <F00 Type="String">0000</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">1</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">83.4</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0000</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0100</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0100</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0200</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0200</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0300</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0300</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0400</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0400</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0500</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0500</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0600</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">1</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">70.2</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0600</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">2</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">3</F35>
+        <F36 Type="Number">62.3</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0700</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">2</F04>
+        <F05 Type="Number">1</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">2</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">4</F35>
+        <F36 Type="Number">66.9</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0700</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0800</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">1</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">69.9</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0800</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0900</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">1</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">1</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">3</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">4</F35>
+        <F36 Type="Number">57.3</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">0900</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">1</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">2</F35>
+        <F36 Type="Number">49.6</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1000</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">1</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">47.7</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1000</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">2</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">1</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">2</F35>
+        <F36 Type="Number">65.4</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1100</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">2</F35>
+        <F36 Type="Number">45.8</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1100</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">1</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">69.8</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1200</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">1</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">45.0</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1200</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">3</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">2</F19>
+        <F20 Type="Number">2</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">5</F35>
+        <F36 Type="Number">47.0</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1300</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">3</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">1</F19>
+        <F20 Type="Number">2</F20>
+        <F21 Type="Number">1</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">5</F35>
+        <F36 Type="Number">60.2</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1300</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">2</F35>
+        <F36 Type="Number">41.2</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1400</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">1</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">27.6</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1400</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">2</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">2</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">2</F21>
+        <F22 Type="Number">1</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">4</F35>
+        <F36 Type="Number">62.0</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1500</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">2</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">3</F35>
+        <F36 Type="Number">49.4</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1500</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">55.3</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1600</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">2</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">2</F35>
+        <F36 Type="Number">55.7</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1600</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">1</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">65.1</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1700</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1700</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">54.3</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1800</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">1</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">67.3</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1800</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">3</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">1</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">1</F19>
+        <F20 Type="Number">2</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">4</F35>
+        <F36 Type="Number">49.5</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1900</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">1900</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">1</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">2</F35>
+        <F36 Type="Number">75.5</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2000</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">55.7</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2000</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2100</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">56.2</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2100</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">1</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">2</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">3</F35>
+        <F36 Type="Number">48.1</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2200</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">1</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">1</F35>
+        <F36 Type="Number">72.5</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2200</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">1</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">1</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">1</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">1</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">3</F35>
+        <F36 Type="Number">58.7</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2300</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">0</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">0</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">0</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">0</F35>
+        <F36 Type="String">-</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Step>
+        <F00 Type="String">2300</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">2</F03>
+        <F04 Type="Number">0</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">0</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">0</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">0</F19>
+        <F20 Type="Number">1</F20>
+        <F21 Type="Number">0</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">2</F35>
+        <F36 Type="Number">48.5</F36>
+        <F37 Type="String">-</F37>
+      </Step>
+      <Total>
+        <F00 Type="String">07-19</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">11</F03>
+        <F04 Type="Number">9</F04>
+        <F05 Type="Number">1</F05>
+        <F06 Type="Number">1</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">2</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">1</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">6</F19>
+        <F20 Type="Number">7</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">0</F22>
+        <F23 Type="Number">2</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">25</F35>
+        <F36 Type="Number">56.3</F36>
+        <F37 Type="Number">67.6</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">07-19</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">11</F03>
+        <F04 Type="Number">8</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">3</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">3</F18>
+        <F19 Type="Number">4</F19>
+        <F20 Type="Number">10</F20>
+        <F21 Type="Number">4</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">0</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">23</F35>
+        <F36 Type="Number">53.8</F36>
+        <F37 Type="Number">67.0</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">06-22</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">13</F03>
+        <F04 Type="Number">10</F04>
+        <F05 Type="Number">1</F05>
+        <F06 Type="Number">1</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">2</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">1</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">6</F19>
+        <F20 Type="Number">9</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">1</F22>
+        <F23 Type="Number">2</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">28</F35>
+        <F36 Type="Number">56.7</F36>
+        <F37 Type="Number">69.1</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">06-22</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">16</F03>
+        <F04 Type="Number">11</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">3</F06>
+        <F07 Type="Number">0</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">3</F18>
+        <F19 Type="Number">6</F19>
+        <F20 Type="Number">12</F20>
+        <F21 Type="Number">7</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">31</F35>
+        <F36 Type="Number">55.5</F36>
+        <F37 Type="Number">67.5</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">06-00</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">14</F03>
+        <F04 Type="Number">10</F04>
+        <F05 Type="Number">1</F05>
+        <F06 Type="Number">1</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">2</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">1</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">6</F19>
+        <F20 Type="Number">9</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">2</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">29</F35>
+        <F36 Type="Number">57.3</F36>
+        <F37 Type="Number">70.1</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">06-00</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">19</F03>
+        <F04 Type="Number">11</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">4</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">4</F18>
+        <F19 Type="Number">7</F19>
+        <F20 Type="Number">14</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">36</F35>
+        <F36 Type="Number">55.4</F36>
+        <F37 Type="Number">67.4</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">00-00</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">14</F03>
+        <F04 Type="Number">10</F04>
+        <F05 Type="Number">1</F05>
+        <F06 Type="Number">2</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">2</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">1</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">6</F19>
+        <F20 Type="Number">9</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">3</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">30</F35>
+        <F36 Type="Number">58.1</F36>
+        <F37 Type="Number">71.0</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">00-00</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">19</F03>
+        <F04 Type="Number">11</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">4</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">4</F18>
+        <F19 Type="Number">7</F19>
+        <F20 Type="Number">14</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">36</F35>
+        <F36 Type="Number">55.4</F36>
+        <F37 Type="Number">67.4</F37>
+      </Total>
+      <Step>
+        <Speed Type="String">Vehicles = 66</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">Posted speed limit = 80 km/h, Exceeding = 4 (6.061%), Mean Exceeding = 86.33 km/h</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">Maximum = 87.8 km/h, Minimum = 27.6 km/h, Mean = 56.6 km/h</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">85% Speed = 69.75 km/h, 95% Speed = 85.45 km/h, Median = 56.25 km/h</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">20 km/h Pace = 42 - 62, Number in Pace = 40 (60.61%)</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">Variance = 164.28, Standard Deviation = 12.82 km/h</Speed>
+      </Step>
+    </Page>
+    <Page>
+      <Title>Grand Total</Title>
+      <TabName>Grand Total</TabName>
+      <Total>
+        <F00 Type="String">--</F00>
+        <F01 Type="String">P</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">14</F03>
+        <F04 Type="Number">10</F04>
+        <F05 Type="Number">1</F05>
+        <F06 Type="Number">2</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">2</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">1</F17>
+        <F18 Type="Number">1</F18>
+        <F19 Type="Number">6</F19>
+        <F20 Type="Number">9</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">3</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">30</F35>
+        <F36 Type="Number">58.1</F36>
+        <F37 Type="Number">71.0</F37>
+      </Total>
+      <Total>
+        <F00 Type="String">--</F00>
+        <F01 Type="String">S</F01>
+        <F02 Type="Number">0</F02>
+        <F03 Type="Number">19</F03>
+        <F04 Type="Number">11</F04>
+        <F05 Type="Number">0</F05>
+        <F06 Type="Number">4</F06>
+        <F07 Type="Number">1</F07>
+        <F08 Type="Number">0</F08>
+        <F09 Type="Number">1</F09>
+        <F10 Type="Number">0</F10>
+        <F11 Type="Number">0</F11>
+        <F12 Type="Number">0</F12>
+        <F13 Type="Number">0</F13>
+        <F14 Type="Number">0</F14>
+        <F15 Type="Number">0</F15>
+        <F16 Type="Number">0</F16>
+        <F17 Type="Number">0</F17>
+        <F18 Type="Number">4</F18>
+        <F19 Type="Number">7</F19>
+        <F20 Type="Number">14</F20>
+        <F21 Type="Number">8</F21>
+        <F22 Type="Number">2</F22>
+        <F23 Type="Number">1</F23>
+        <F24 Type="Number">0</F24>
+        <F25 Type="Number">0</F25>
+        <F26 Type="Number">0</F26>
+        <F27 Type="Number">0</F27>
+        <F28 Type="Number">0</F28>
+        <F29 Type="Number">0</F29>
+        <F30 Type="Number">0</F30>
+        <F31 Type="Number">0</F31>
+        <F32 Type="Number">0</F32>
+        <F33 Type="Number">0</F33>
+        <F34 Type="Number">0</F34>
+        <F35 Type="Number">36</F35>
+        <F36 Type="Number">55.4</F36>
+        <F37 Type="Number">67.4</F37>
+      </Total>
+      <Step>
+        <Speed Type="String">Vehicles = 66</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">Posted speed limit = 80 km/h, Exceeding = 4 (6.061%), Mean Exceeding = 86.33 km/h</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">Maximum = 87.8 km/h, Minimum = 27.6 km/h, Mean = 56.6 km/h</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">85% Speed = 69.75 km/h, 95% Speed = 85.45 km/h, Median = 56.25 km/h</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">20 km/h Pace = 42 - 62, Number in Pace = 40 (60.61%)</Speed>
+      </Step>
+      <Step>
+        <Speed Type="String">Variance = 164.28, Standard Deviation = 12.82 km/h</Speed>
+      </Step>
+    </Page>
+  </Data>
+</Report>
+

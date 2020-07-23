@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42FC203A-EF02-4D70-8017-860DE2A5E643}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrafficCount.Presentation</RootNamespace>
+    <AssemblyName>TrafficCount.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <JSLintSkip>\Scripts\MapScript.js|\Scripts\JScript1.js|\Scripts\JavaScriptMap.js|\Scripts\rvJQuery.js|\Scripts\CommonScript.js</JSLintSkip>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Location.css" />
+    <Content Include="CSS\TCHistory.css" />
+    <Content Include="CSS\esri.css" />
+    <Content Include="CSS\GVStyles.css" />
+    <Content Include="CSS\GVStyles1.css" />
+    <Content Include="CSS\Header.css" />
+    <None Include="Properties\PublishProfiles\DeployToTCS.pubxml" />
+    <None Include="Service References\TCInsert\TCInsert1.wsdl" />
+    <None Include="Service References\TCInsert\TCInsert2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TCInsert\TCInsert21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TCService\configuration91.svcinfo" />
+    <None Include="Service References\TCService\configuration.svcinfo" />
+    <None Include="Service References\TCService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="CSS\Site.css" />
+    <Content Include="CSS\jquery-ui.css" />
+    <Content Include="CSS\SearchWidget.css" />
+    <Content Include="Images\NorthArrow.jpg" />
+    <Content Include="Images\RVC.png" />
+    <Content Include="Images\RVCLogo.jpg" />
+    <Content Include="Images\RVC_Logo2010.bmp" />
+    <Content Include="Images\RVC_Logo2010.jpg" />
+    <Content Include="Images\VehicleType.JPG" />
+    <Content Include="Scripts\CommonScript.js" />
+    <Content Include="Scripts\JavaScriptMap.js" />
+    <Content Include="Scripts\JScript1.js" />
+    <Content Include="Scripts\MapScript.js" />
+    <Content Include="Scripts\rvJQuery.js" />
+    <None Include="Service References\TCInsert\configuration91.svcinfo" />
+    <None Include="Service References\TCInsert\configuration.svcinfo" />
+    <None Include="Service References\TCInsert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TCInsert\TCInsert1.disco" />
+    <None Include="Service References\TCService\TCSummary1.disco" />
+    <Content Include="TCSummary.aspx" />
+    <Content Include="Images\RVCLogo.tiff" />
+    <Content Include="TCHistory.aspx" />
+    <Content Include="ucHistory\AttTable.ascx" />
+    <Content Include="ucHistory\ChartMap.ascx" />
+    <Content Include="ucHistory\ZLocation.ascx" />
+    <Content Include="ucHistory\SearchWidget.ascx" />
+    <Content Include="ucSummary\AxlesDetailed.ascx" />
+    <Content Include="ucSummary\AxlesInfo.ascx" />
+    <Content Include="ucSummary\BasicInfo.ascx" />
+    <Content Include="ucSummary\LocationMap.ascx" />
+    <Content Include="ucSummary\SpeedDetailed.ascx" />
+    <Content Include="ucSummary\SpeedInfo.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Service References\TCService\TrafficCount.Presentation.TCService.spTCAxlesDetails_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TCService\TrafficCount.Presentation.TCService.spTCAxlesSummaryBySite_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TCService\TrafficCount.Presentation.TCService.spTCSpeedDetails_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TCService\TrafficCount.Presentation.TCService.spTCSpeedSummaryBySite_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TCService\TrafficCount.Presentation.TCService.spTCSummaryByLoc_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TCService\TrafficCount.Presentation.TCService.spTCSummaryBySite_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TCService\TrafficCount.Presentation.TCService.spTCSummaryOneBySite_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\TCService\TCSummary1.wsdl" />
+    <None Include="Service References\TCService\TCSummary4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TCService\TCSummary41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TCService\TCSummary42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TCService\TCSummary43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\TCAxlesDetailsDTO.cs" />
+    <Compile Include="DTO\TCAxlesDTO.cs" />
+    <Compile Include="DTO\TCSpeedDetailsDTO.cs" />
+    <Compile Include="DTO\TCSpeedDTO.cs" />
+    <Compile Include="Service References\TCInsert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TCService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\TCDTO.cs" />
+    <Compile Include="TCSummary.aspx.cs">
+      <DependentUpon>TCSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TCSummary.aspx.designer.cs">
+      <DependentUpon>TCSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TCHistory.aspx.cs">
+      <DependentUpon>TCHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TCHistory.aspx.designer.cs">
+      <DependentUpon>TCHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ucHistory\AttTable.ascx.cs">
+      <DependentUpon>AttTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucHistory\AttTable.ascx.designer.cs">
+      <DependentUpon>AttTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucHistory\ChartMap.ascx.cs">
+      <DependentUpon>ChartMap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucHistory\ChartMap.ascx.designer.cs">
+      <DependentUpon>ChartMap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucHistory\ZLocation.ascx.cs">
+      <DependentUpon>ZLocation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucHistory\ZLocation.ascx.designer.cs">
+      <DependentUpon>ZLocation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucHistory\SearchWidget.ascx.cs">
+      <DependentUpon>SearchWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucHistory\SearchWidget.ascx.designer.cs">
+      <DependentUpon>SearchWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSummary\AxlesDetailed.ascx.cs">
+      <DependentUpon>AxlesDetailed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSummary\AxlesDetailed.ascx.designer.cs">
+      <DependentUpon>AxlesDetailed.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSummary\AxlesInfo.ascx.cs">
+      <DependentUpon>AxlesInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSummary\AxlesInfo.ascx.designer.cs">
+      <DependentUpon>AxlesInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSummary\BasicInfo.ascx.cs">
+      <DependentUpon>BasicInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSummary\BasicInfo.ascx.designer.cs">
+      <DependentUpon>BasicInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSummary\LocationMap.ascx.cs">
+      <DependentUpon>LocationMap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSummary\LocationMap.ascx.designer.cs">
+      <DependentUpon>LocationMap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSummary\SpeedDetailed.ascx.cs">
+      <DependentUpon>SpeedDetailed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSummary\SpeedDetailed.ascx.designer.cs">
+      <DependentUpon>SpeedDetailed.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSummary\SpeedInfo.ascx.cs">
+      <DependentUpon>SpeedInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSummary\SpeedInfo.ascx.designer.cs">
+      <DependentUpon>SpeedInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\TCInsert\" />
+    <WCFMetadataStorage Include="Service References\TCService\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63169</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/TC</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

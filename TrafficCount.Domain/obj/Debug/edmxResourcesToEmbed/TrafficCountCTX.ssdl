@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TrafficCountModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TCAxlesDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="varchar" MaxLength="15" />
+    <Property Name="Lane" Type="varchar" MaxLength="10" />
+    <Property Name="Bound" Type="varchar" MaxLength="15" />
+    <Property Name="TimeStart" Type="datetime" />
+    <Property Name="TimeEnd" Type="datetime" />
+    <Property Name="TimeCaptured" Type="varchar" MaxLength="25" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="MotorCycles" Type="int" />
+    <Property Name="PassengerCars" Type="int" />
+    <Property Name="TwoAxleFourTires" Type="int" />
+    <Property Name="Buses" Type="int" />
+    <Property Name="TwoAxleSixTires" Type="int" />
+    <Property Name="ThreeAxleSingleUnitTruck" Type="int" />
+    <Property Name="FourOrMoreAxleSignleUnitTruck" Type="int" />
+    <Property Name="FourOrLessAxleSingleTrailerTruck" Type="int" />
+    <Property Name="FiveAxleSignleTrailerTruck" Type="int" />
+    <Property Name="SixOrMoreAxleSignleTrailerTruck" Type="int" />
+    <Property Name="FiveLessAxleMultiTrailerTruck" Type="int" />
+    <Property Name="SixAxleMultiTrailerTruck" Type="int" />
+    <Property Name="SevenMoreAxleMultiTrailerTruck" Type="int" />
+    <Property Name="TruckCount" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="Total" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="float" />
+    <Property Name="Vpp85" Type="float" />
+  </EntityType>
+  <EntityType Name="TCAxlesSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="varchar" MaxLength="15" />
+    <Property Name="Lane" Type="varchar" MaxLength="10" />
+    <Property Name="Bound" Type="varchar" MaxLength="15" />
+    <Property Name="TimeStart" Type="datetime" />
+    <Property Name="TimeEnd" Type="datetime" />
+    <Property Name="TimeCaptured" Type="varchar" MaxLength="25" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="MotorCycles" Type="int" />
+    <Property Name="PassengerCars" Type="int" />
+    <Property Name="TwoAxleFourTires" Type="int" />
+    <Property Name="Buses" Type="int" />
+    <Property Name="TwoAxleSixTires" Type="int" />
+    <Property Name="ThreeAxleSingleUnitTruck" Type="int" />
+    <Property Name="FourOrMoreAxleSignleUnitTruck" Type="int" />
+    <Property Name="FourOrLessAxleSingleTrailerTruck" Type="int" />
+    <Property Name="FiveAxleSignleTrailerTruck" Type="int" />
+    <Property Name="SixOrMoreAxleSignleTrailerTruck" Type="int" />
+    <Property Name="FiveLessAxleMultiTrailerTruck" Type="int" />
+    <Property Name="SixAxleMultiTrailerTruck" Type="int" />
+    <Property Name="SevenMoreAxleMultiTrailerTruck" Type="int" />
+    <Property Name="TruckCount" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="Total" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="float" />
+    <Property Name="Vpp85" Type="float" />
+    <Property Name="oldSiteID" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="TCSpeedDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="varchar" MaxLength="15" />
+    <Property Name="Lane" Type="varchar" MaxLength="10" />
+    <Property Name="Bound" Type="varchar" MaxLength="15" />
+    <Property Name="TimeStart" Type="datetime" />
+    <Property Name="TimeEnd" Type="datetime" />
+    <Property Name="TimeCaptured" Type="varchar" MaxLength="25" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Sp0To10" Type="int" />
+    <Property Name="Sp10To20" Type="int" />
+    <Property Name="Sp20To30" Type="int" />
+    <Property Name="Sp30To40" Type="int" />
+    <Property Name="Sp40To50" Type="int" />
+    <Property Name="Sp50To60" Type="int" />
+    <Property Name="Sp60To70" Type="int" />
+    <Property Name="Sp70To80" Type="int" />
+    <Property Name="Sp80To90" Type="int" />
+    <Property Name="Sp90To100" Type="int" />
+    <Property Name="Sp100To110" Type="int" />
+    <Property Name="Sp110To120" Type="int" />
+    <Property Name="Sp120To130" Type="int" />
+    <Property Name="Sp130To140" Type="int" />
+    <Property Name="Sp140To150" Type="int" />
+    <Property Name="Sp150To160" Type="int" />
+    <Property Name="Sp160To200" Type="int" />
+    <Property Name="Total" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="float" />
+    <Property Name="Vpp85" Type="float" />
+  </EntityType>
+  <EntityType Name="TCSpeedSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="varchar" MaxLength="15" />
+    <Property Name="Lane" Type="varchar" MaxLength="10" />
+    <Property Name="Bound" Type="varchar" MaxLength="15" />
+    <Property Name="TimeStart" Type="datetime" />
+    <Property Name="TimeEnd" Type="datetime" />
+    <Property Name="TimeCaptured" Type="varchar" MaxLength="25" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Sp0To10" Type="int" />
+    <Property Name="Sp10To20" Type="int" />
+    <Property Name="Sp20To30" Type="int" />
+    <Property Name="Sp30To40" Type="int" />
+    <Property Name="Sp40To50" Type="int" />
+    <Property Name="Sp50To60" Type="int" />
+    <Property Name="Sp60To70" Type="int" />
+    <Property Name="Sp70To80" Type="int" />
+    <Property Name="Sp80To90" Type="int" />
+    <Property Name="Sp90To100" Type="int" />
+    <Property Name="Sp100To110" Type="int" />
+    <Property Name="Sp110To120" Type="int" />
+    <Property Name="Sp120To130" Type="int" />
+    <Property Name="Sp130To140" Type="int" />
+    <Property Name="Sp140To150" Type="int" />
+    <Property Name="Sp150To160" Type="int" />
+    <Property Name="Sp160To200" Type="int" />
+    <Property Name="Total" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="float" />
+    <Property Name="Vpp85" Type="float" />
+  </EntityType>
+  <EntityType Name="TCSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vchSiteID" Type="nvarchar" MaxLength="50" />
+    <Property Name="calcYearOfCount" Type="int" />
+    <Property Name="intTWP" Type="int" />
+    <Property Name="vchLocation" Type="nvarchar" MaxLength="200" />
+    <Property Name="dteDateOfCount" Type="datetime" />
+    <Property Name="intNumofVehicles" Type="int" />
+    <Property Name="vchTypeofCounter" Type="nvarchar" MaxLength="3" />
+    <Property Name="vchPostedLimit" Type="nvarchar" MaxLength="250" />
+    <Property Name="vch85Percentile" Type="nvarchar" MaxLength="50" />
+    <Property Name="vchPercentageTrucks" Type="nvarchar" MaxLength="50" />
+    <Property Name="Road1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Road2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Dir" Type="nvarchar" MaxLength="50" />
+    <Property Name="LinkToHistory" Type="nvarchar" MaxLength="250" />
+    <Property Name="LinkToSummary" Type="nvarchar" MaxLength="250" />
+    <Property Name="LinkToExcel" Type="nvarchar" MaxLength="250" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="250" />
+    <Property Name="SensorID" Type="nvarchar" MaxLength="150" StoreGeneratedPattern="Computed" />
+    <Property Name="History" Type="nvarchar" MaxLength="216" StoreGeneratedPattern="Computed" />
+    <Property Name="Summary" Type="nvarchar" MaxLength="94" StoreGeneratedPattern="Computed" />
+    <Property Name="LegalDesc" Type="varchar" MaxLength="50" />
+    <Property Name="Shape" Type="geometry" />
+  </EntityType>
+  <EntityType Name="TrafficCountSensors">
+    <Key>
+      <PropertyRef Name="ogr_fid" />
+    </Key>
+    <Property Name="ogr_fid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shape" Type="geometry" />
+    <Property Name="road_1" Type="varchar(max)" />
+    <Property Name="road_2" Type="varchar(max)" />
+    <Property Name="distance_m" Type="int" />
+    <Property Name="linktohistory" Type="varchar(max)" />
+    <Property Name="direction" Type="varchar(max)" />
+  </EntityType>
+  <Function Name="spDelTCBySiteID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spInsertTCAxlesDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="InOut" />
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+    <Parameter Name="Lane" Type="varchar" Mode="In" />
+    <Parameter Name="Bound" Type="varchar" Mode="In" />
+    <Parameter Name="TimeStart" Type="datetime" Mode="In" />
+    <Parameter Name="TimeEnd" Type="datetime" Mode="In" />
+    <Parameter Name="TimeCaptured" Type="varchar" Mode="In" />
+    <Parameter Name="Location" Type="varchar" Mode="In" />
+    <Parameter Name="MotorCycles" Type="int" Mode="In" />
+    <Parameter Name="PassengerCars" Type="int" Mode="In" />
+    <Parameter Name="TwoAxleFourTires" Type="int" Mode="In" />
+    <Parameter Name="Buses" Type="int" Mode="In" />
+    <Parameter Name="TwoAxleSixTires" Type="int" Mode="In" />
+    <Parameter Name="ThreeAxleSingleUnitTruck" Type="int" Mode="In" />
+    <Parameter Name="FourOrMoreAxleSignleUnitTruck" Type="int" Mode="In" />
+    <Parameter Name="FourOrLessAxleSingleTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="FiveAxleSignleTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SixOrMoreAxleSignleTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="FiveLessAxleMultiTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SixAxleMultiTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SevenMoreAxleMultiTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SpMean" Type="float" Mode="In" />
+    <Parameter Name="Vpp85" Type="float" Mode="In" />
+  </Function>
+  <Function Name="spInsertTCAxlesSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="InOut" />
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+    <Parameter Name="Lane" Type="varchar" Mode="In" />
+    <Parameter Name="Bound" Type="varchar" Mode="In" />
+    <Parameter Name="TimeStart" Type="datetime" Mode="In" />
+    <Parameter Name="TimeEnd" Type="datetime" Mode="In" />
+    <Parameter Name="TimeCaptured" Type="varchar" Mode="In" />
+    <Parameter Name="Location" Type="varchar" Mode="In" />
+    <Parameter Name="MotorCycles" Type="int" Mode="In" />
+    <Parameter Name="PassengerCars" Type="int" Mode="In" />
+    <Parameter Name="TwoAxleFourTires" Type="int" Mode="In" />
+    <Parameter Name="Buses" Type="int" Mode="In" />
+    <Parameter Name="TwoAxleSixTires" Type="int" Mode="In" />
+    <Parameter Name="ThreeAxleSingleUnitTruck" Type="int" Mode="In" />
+    <Parameter Name="FourOrMoreAxleSignleUnitTruck" Type="int" Mode="In" />
+    <Parameter Name="FourOrLessAxleSingleTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="FiveAxleSignleTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SixOrMoreAxleSignleTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="FiveLessAxleMultiTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SixAxleMultiTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SevenMoreAxleMultiTrailerTruck" Type="int" Mode="In" />
+    <Parameter Name="SpMean" Type="float" Mode="In" />
+    <Parameter Name="Vpp85" Type="float" Mode="In" />
+  </Function>
+  <Function Name="spInsertTCSpeedDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="InOut" />
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+    <Parameter Name="Lane" Type="varchar" Mode="In" />
+    <Parameter Name="Bound" Type="varchar" Mode="In" />
+    <Parameter Name="TimeStart" Type="datetime" Mode="In" />
+    <Parameter Name="TimeEnd" Type="datetime" Mode="In" />
+    <Parameter Name="TimeCaptured" Type="varchar" Mode="In" />
+    <Parameter Name="Location" Type="varchar" Mode="In" />
+    <Parameter Name="Sp0To10" Type="int" Mode="In" />
+    <Parameter Name="Sp10To20" Type="int" Mode="In" />
+    <Parameter Name="Sp20To30" Type="int" Mode="In" />
+    <Parameter Name="Sp30To40" Type="int" Mode="In" />
+    <Parameter Name="Sp40To50" Type="int" Mode="In" />
+    <Parameter Name="Sp50To60" Type="int" Mode="In" />
+    <Parameter Name="Sp60To70" Type="int" Mode="In" />
+    <Parameter Name="Sp70To80" Type="int" Mode="In" />
+    <Parameter Name="Sp80To90" Type="int" Mode="In" />
+    <Parameter Name="Sp90To100" Type="int" Mode="In" />
+    <Parameter Name="Sp100To110" Type="int" Mode="In" />
+    <Parameter Name="Sp110To120" Type="int" Mode="In" />
+    <Parameter Name="Sp120To130" Type="int" Mode="In" />
+    <Parameter Name="Sp130To140" Type="int" Mode="In" />
+    <Parameter Name="Sp140To150" Type="int" Mode="In" />
+    <Parameter Name="Sp150To160" Type="int" Mode="In" />
+    <Parameter Name="Sp160To200" Type="int" Mode="In" />
+    <Parameter Name="SpMean" Type="float" Mode="In" />
+    <Parameter Name="Vpp85" Type="float" Mode="In" />
+  </Function>
+  <Function Name="spInsertTCSpeedSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="InOut" />
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+    <Parameter Name="Lane" Type="varchar" Mode="In" />
+    <Parameter Name="Bound" Type="varchar" Mode="In" />
+    <Parameter Name="TimeStart" Type="datetime" Mode="In" />
+    <Parameter Name="TimeEnd" Type="datetime" Mode="In" />
+    <Parameter Name="TimeCaptured" Type="varchar" Mode="In" />
+    <Parameter Name="Location" Type="varchar" Mode="In" />
+    <Parameter Name="Sp0To10" Type="int" Mode="In" />
+    <Parameter Name="Sp10To20" Type="int" Mode="In" />
+    <Parameter Name="Sp20To30" Type="int" Mode="In" />
+    <Parameter Name="Sp30To40" Type="int" Mode="In" />
+    <Parameter Name="Sp40To50" Type="int" Mode="In" />
+    <Parameter Name="Sp50To60" Type="int" Mode="In" />
+    <Parameter Name="Sp60To70" Type="int" Mode="In" />
+    <Parameter Name="Sp70To80" Type="int" Mode="In" />
+    <Parameter Name="Sp80To90" Type="int" Mode="In" />
+    <Parameter Name="Sp90To100" Type="int" Mode="In" />
+    <Parameter Name="Sp100To110" Type="int" Mode="In" />
+    <Parameter Name="Sp110To120" Type="int" Mode="In" />
+    <Parameter Name="Sp120To130" Type="int" Mode="In" />
+    <Parameter Name="Sp130To140" Type="int" Mode="In" />
+    <Parameter Name="Sp140To150" Type="int" Mode="In" />
+    <Parameter Name="Sp150To160" Type="int" Mode="In" />
+    <Parameter Name="Sp160To200" Type="int" Mode="In" />
+    <Parameter Name="SpMean" Type="float" Mode="In" />
+    <Parameter Name="Vpp85" Type="float" Mode="In" />
+  </Function>
+  <Function Name="spInsertTCSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="InOut" />
+    <Parameter Name="vchSiteID" Type="nvarchar" Mode="In" />
+    <Parameter Name="intTWP" Type="int" Mode="In" />
+    <Parameter Name="vchLocation" Type="nvarchar" Mode="In" />
+    <Parameter Name="dteDateOfCount" Type="datetime" Mode="In" />
+    <Parameter Name="intNumofVehicles" Type="int" Mode="In" />
+    <Parameter Name="vchPostedLimit" Type="nvarchar" Mode="In" />
+    <Parameter Name="vch85Percentile" Type="nvarchar" Mode="In" />
+    <Parameter Name="vchPercentageTrucks" Type="nvarchar" Mode="In" />
+    <Parameter Name="Road1" Type="nvarchar" Mode="In" />
+    <Parameter Name="Road2" Type="nvarchar" Mode="In" />
+    <Parameter Name="Dir" Type="nvarchar" Mode="In" />
+    <Parameter Name="LinkToHistory" Type="nvarchar" Mode="In" />
+    <Parameter Name="LinkToSummary" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spTCAxlesDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+    <Parameter Name="DateCapture" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spTCAxlesSummaryBySite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spTCSpeedDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+    <Parameter Name="DateCapture" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spTCSpeedSummaryBySite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spTCSummaryByLoc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Road1" Type="varchar" Mode="In" />
+    <Parameter Name="Road2" Type="varchar" Mode="In" />
+    <Parameter Name="Dir" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spTCSummaryBySite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spTCSummaryOneBySite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spUpdateTCSummaryLocation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="udfFindTWP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="FirstRoad" Type="varchar" Mode="In" />
+    <Parameter Name="SecondRoad" Type="varchar" Mode="In" />
+    <Parameter Name="Dir" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="udfPointXY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="FirstRoad" Type="varchar" Mode="In" />
+    <Parameter Name="SecondRoad" Type="varchar" Mode="In" />
+    <Parameter Name="Dir" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="udfPointXYBySite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="SiteID" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="TrafficCountModelStoreContainer">
+    <EntitySet Name="TCAxlesDetails" EntityType="Self.TCAxlesDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCAxlesSummary" EntityType="Self.TCAxlesSummary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCSpeedDetails" EntityType="Self.TCSpeedDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCSpeedSummary" EntityType="Self.TCSpeedSummary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCSummary" EntityType="Self.TCSummary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrafficCountSensors" EntityType="Self.TrafficCountSensors" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

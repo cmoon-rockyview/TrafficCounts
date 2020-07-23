@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TrafficCountModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TrafficCountEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="spDelTCBySiteID">
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFindRoad1" ReturnType="Collection(String)">
+      <Parameter Name="RoadName1" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFindRoad2" ReturnType="Collection(String)">
+      <Parameter Name="RoadName1" Mode="In" Type="String" />
+      <Parameter Name="RoadName2" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFindSite" ReturnType="Collection(String)">
+      <Parameter Name="Site" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spFindTWPLegal" />
+    <FunctionImport Name="spInsertTCAxlesDetails">
+      <Parameter Name="ID" Mode="InOut" Type="Int32" />
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+      <Parameter Name="Lane" Mode="In" Type="String" />
+      <Parameter Name="Bound" Mode="In" Type="String" />
+      <Parameter Name="TimeStart" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeEnd" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeCaptured" Mode="In" Type="String" />
+      <Parameter Name="Location" Mode="In" Type="String" />
+      <Parameter Name="MotorCycles" Mode="In" Type="Int32" />
+      <Parameter Name="PassengerCars" Mode="In" Type="Int32" />
+      <Parameter Name="TwoAxleFourTires" Mode="In" Type="Int32" />
+      <Parameter Name="Buses" Mode="In" Type="Int32" />
+      <Parameter Name="TwoAxleSixTires" Mode="In" Type="Int32" />
+      <Parameter Name="ThreeAxleSingleUnitTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FourOrMoreAxleSignleUnitTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FourOrLessAxleSingleTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FiveAxleSignleTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SixOrMoreAxleSignleTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FiveLessAxleMultiTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SixAxleMultiTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SevenMoreAxleMultiTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SpMean" Mode="In" Type="Double" />
+      <Parameter Name="Vpp85" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="spInsertTCAxlesSummary">
+      <Parameter Name="ID" Mode="InOut" Type="Int32" />
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+      <Parameter Name="Lane" Mode="In" Type="String" />
+      <Parameter Name="Bound" Mode="In" Type="String" />
+      <Parameter Name="TimeStart" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeEnd" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeCaptured" Mode="In" Type="String" />
+      <Parameter Name="Location" Mode="In" Type="String" />
+      <Parameter Name="MotorCycles" Mode="In" Type="Int32" />
+      <Parameter Name="PassengerCars" Mode="In" Type="Int32" />
+      <Parameter Name="TwoAxleFourTires" Mode="In" Type="Int32" />
+      <Parameter Name="Buses" Mode="In" Type="Int32" />
+      <Parameter Name="TwoAxleSixTires" Mode="In" Type="Int32" />
+      <Parameter Name="ThreeAxleSingleUnitTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FourOrMoreAxleSignleUnitTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FourOrLessAxleSingleTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FiveAxleSignleTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SixOrMoreAxleSignleTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="FiveLessAxleMultiTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SixAxleMultiTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SevenMoreAxleMultiTrailerTruck" Mode="In" Type="Int32" />
+      <Parameter Name="SpMean" Mode="In" Type="Double" />
+      <Parameter Name="Vpp85" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="spInsertTCSpeedDetails">
+      <Parameter Name="ID" Mode="InOut" Type="Int32" />
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+      <Parameter Name="Lane" Mode="In" Type="String" />
+      <Parameter Name="Bound" Mode="In" Type="String" />
+      <Parameter Name="TimeStart" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeEnd" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeCaptured" Mode="In" Type="String" />
+      <Parameter Name="Location" Mode="In" Type="String" />
+      <Parameter Name="Sp0To10" Mode="In" Type="Int32" />
+      <Parameter Name="Sp10To20" Mode="In" Type="Int32" />
+      <Parameter Name="Sp20To30" Mode="In" Type="Int32" />
+      <Parameter Name="Sp30To40" Mode="In" Type="Int32" />
+      <Parameter Name="Sp40To50" Mode="In" Type="Int32" />
+      <Parameter Name="Sp50To60" Mode="In" Type="Int32" />
+      <Parameter Name="Sp60To70" Mode="In" Type="Int32" />
+      <Parameter Name="Sp70To80" Mode="In" Type="Int32" />
+      <Parameter Name="Sp80To90" Mode="In" Type="Int32" />
+      <Parameter Name="Sp90To100" Mode="In" Type="Int32" />
+      <Parameter Name="Sp100To110" Mode="In" Type="Int32" />
+      <Parameter Name="Sp110To120" Mode="In" Type="Int32" />
+      <Parameter Name="Sp120To130" Mode="In" Type="Int32" />
+      <Parameter Name="Sp130To140" Mode="In" Type="Int32" />
+      <Parameter Name="Sp140To150" Mode="In" Type="Int32" />
+      <Parameter Name="Sp150To160" Mode="In" Type="Int32" />
+      <Parameter Name="Sp160To200" Mode="In" Type="Int32" />
+      <Parameter Name="SpMean" Mode="In" Type="Double" />
+      <Parameter Name="Vpp85" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="spInsertTCSpeedSummary">
+      <Parameter Name="ID" Mode="InOut" Type="Int32" />
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+      <Parameter Name="Lane" Mode="In" Type="String" />
+      <Parameter Name="Bound" Mode="In" Type="String" />
+      <Parameter Name="TimeStart" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeEnd" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeCaptured" Mode="In" Type="String" />
+      <Parameter Name="Location" Mode="In" Type="String" />
+      <Parameter Name="Sp0To10" Mode="In" Type="Int32" />
+      <Parameter Name="Sp10To20" Mode="In" Type="Int32" />
+      <Parameter Name="Sp20To30" Mode="In" Type="Int32" />
+      <Parameter Name="Sp30To40" Mode="In" Type="Int32" />
+      <Parameter Name="Sp40To50" Mode="In" Type="Int32" />
+      <Parameter Name="Sp50To60" Mode="In" Type="Int32" />
+      <Parameter Name="Sp60To70" Mode="In" Type="Int32" />
+      <Parameter Name="Sp70To80" Mode="In" Type="Int32" />
+      <Parameter Name="Sp80To90" Mode="In" Type="Int32" />
+      <Parameter Name="Sp90To100" Mode="In" Type="Int32" />
+      <Parameter Name="Sp100To110" Mode="In" Type="Int32" />
+      <Parameter Name="Sp110To120" Mode="In" Type="Int32" />
+      <Parameter Name="Sp120To130" Mode="In" Type="Int32" />
+      <Parameter Name="Sp130To140" Mode="In" Type="Int32" />
+      <Parameter Name="Sp140To150" Mode="In" Type="Int32" />
+      <Parameter Name="Sp150To160" Mode="In" Type="Int32" />
+      <Parameter Name="Sp160To200" Mode="In" Type="Int32" />
+      <Parameter Name="SpMean" Mode="In" Type="Double" />
+      <Parameter Name="Vpp85" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="spInsertTCSummary">
+      <Parameter Name="ID" Mode="InOut" Type="Int32" />
+      <Parameter Name="vchSiteID" Mode="In" Type="String" />
+      <Parameter Name="intTWP" Mode="In" Type="Int32" />
+      <Parameter Name="vchLocation" Mode="In" Type="String" />
+      <Parameter Name="dteDateOfCount" Mode="In" Type="DateTime" />
+      <Parameter Name="intNumofVehicles" Mode="In" Type="Int32" />
+      <Parameter Name="vchPostedLimit" Mode="In" Type="String" />
+      <Parameter Name="vch85Percentile" Mode="In" Type="String" />
+      <Parameter Name="vchPercentageTrucks" Mode="In" Type="String" />
+      <Parameter Name="Road1" Mode="In" Type="String" />
+      <Parameter Name="Road2" Mode="In" Type="String" />
+      <Parameter Name="Dir" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spTCAxlesDetails" ReturnType="Collection(TrafficCountModel.spTCAxlesDetails_Result)">
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+      <Parameter Name="DateCapture" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="spTCAxlesSummaryBySite" ReturnType="Collection(TrafficCountModel.spTCAxlesSummaryBySite_Result)">
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spTCSpeedDetails" ReturnType="Collection(TrafficCountModel.spTCSpeedDetails_Result)">
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+      <Parameter Name="DateCapture" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="spTCSpeedSummaryBySite" ReturnType="Collection(TrafficCountModel.spTCSpeedSummaryBySite_Result)">
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spTCSummaryByLoc" ReturnType="Collection(TrafficCountModel.spTCSummaryByLoc_Result)">
+      <Parameter Name="Road1" Mode="In" Type="String" />
+      <Parameter Name="Road2" Mode="In" Type="String" />
+      <Parameter Name="Dir" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spTCSummaryBySite" ReturnType="Collection(TrafficCountModel.spTCSummaryBySite_Result)">
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spTCSummaryOneBySite" ReturnType="Collection(TrafficCountModel.spTCSummaryOneBySite_Result)">
+      <Parameter Name="SiteID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spUpdateTCSummaryLocation" />
+    <FunctionImport Name="spUpdateTrafficCount" />
+    <EntitySet Name="TCAxlesDetails" EntityType="TrafficCountModel.TCAxlesDetail" />
+    <EntitySet Name="TCAxlesSummaries" EntityType="TrafficCountModel.TCAxlesSummary" />
+    <EntitySet Name="TCSpeedDetails" EntityType="TrafficCountModel.TCSpeedDetail" />
+    <EntitySet Name="TCSpeedSummaries" EntityType="TrafficCountModel.TCSpeedSummary" />
+    <EntitySet Name="UserNames" EntityType="TrafficCountModel.UserName" />
+    <EntitySet Name="TCSummaries" EntityType="TrafficCountModel.TCSummary" />
+    <EntitySet Name="TrafficCountSensors" EntityType="TrafficCountModel.TrafficCountSensor" />
+  </EntityContainer>
+  <ComplexType Name="spTCAxlesDetails_Result">
+    <Property Type="String" Name="TimeCaptured" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="Lane" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="MotorCycles" Nullable="true" />
+    <Property Type="Int32" Name="PassengerCars" Nullable="true" />
+    <Property Type="Int32" Name="TwoAxleFourTires" Nullable="true" />
+    <Property Type="Int32" Name="Buses" Nullable="true" />
+    <Property Type="Int32" Name="TwoAxleSixTires" Nullable="true" />
+    <Property Type="Int32" Name="ThreeAxleSingleUnitTruck" Nullable="true" />
+    <Property Type="Int32" Name="FourOrMoreAxleSignleUnitTruck" Nullable="true" />
+    <Property Type="Int32" Name="FourOrLessAxleSingleTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="FiveAxleSignleTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="SixOrMoreAxleSignleTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="FiveLessAxleMultiTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="SixAxleMultiTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="SevenMoreAxleMultiTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="TruckCount" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+    <Property Type="Double" Name="SpMean" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spTCAxlesSummaryBySite_Result">
+    <Property Type="String" Name="SiteID" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lane" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Bound" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Location" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TimeCaptured" Nullable="true" MaxLength="25" />
+    <Property Type="Int32" Name="MotorCycles" Nullable="true" />
+    <Property Type="Int32" Name="PassengerCars" Nullable="true" />
+    <Property Type="Int32" Name="TwoAxleFourTires" Nullable="true" />
+    <Property Type="Int32" Name="Buses" Nullable="true" />
+    <Property Type="Int32" Name="TwoAxleSixTires" Nullable="true" />
+    <Property Type="Int32" Name="ThreeAxleSingleUnitTruck" Nullable="true" />
+    <Property Type="Int32" Name="FourOrMoreAxleSignleUnitTruck" Nullable="true" />
+    <Property Type="Int32" Name="FourOrLessAxleSingleTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="FiveAxleSignleTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="SixOrMoreAxleSignleTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="FiveLessAxleMultiTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="SixAxleMultiTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="SevenMoreAxleMultiTrailerTruck" Nullable="true" />
+    <Property Type="Int32" Name="TruckCount" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+    <Property Type="Double" Name="SpMean" Nullable="true" />
+    <Property Type="Double" Name="Vpp85" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spTCSpeedDetails_Result">
+    <Property Type="String" Name="TimeCaptured" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="Lane" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Sp0To10" Nullable="true" />
+    <Property Type="Int32" Name="Sp10To20" Nullable="true" />
+    <Property Type="Int32" Name="Sp20To30" Nullable="true" />
+    <Property Type="Int32" Name="Sp30To40" Nullable="true" />
+    <Property Type="Int32" Name="Sp40To50" Nullable="true" />
+    <Property Type="Int32" Name="Sp50To60" Nullable="true" />
+    <Property Type="Int32" Name="Sp60To70" Nullable="true" />
+    <Property Type="Int32" Name="Sp70To80" Nullable="true" />
+    <Property Type="Int32" Name="Sp80To90" Nullable="true" />
+    <Property Type="Int32" Name="Sp90To100" Nullable="true" />
+    <Property Type="Int32" Name="Sp100To110" Nullable="true" />
+    <Property Type="Int32" Name="Sp110To120" Nullable="true" />
+    <Property Type="Int32" Name="Sp120To130" Nullable="true" />
+    <Property Type="Int32" Name="Sp130To140" Nullable="true" />
+    <Property Type="Int32" Name="Sp140To150" Nullable="true" />
+    <Property Type="Int32" Name="Sp150To160" Nullable="true" />
+    <Property Type="Int32" Name="Sp160To200" Nullable="true" />
+    <Property Type="Double" Name="SpMean" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spTCSpeedSummaryBySite_Result">
+    <Property Type="String" Name="SiteID" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lane" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Bound" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="TimeCaptured" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="Location" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Sp0To10" Nullable="true" />
+    <Property Type="Int32" Name="Sp10To20" Nullable="true" />
+    <Property Type="Int32" Name="Sp20To30" Nullable="true" />
+    <Property Type="Int32" Name="Sp30To40" Nullable="true" />
+    <Property Type="Int32" Name="Sp40To50" Nullable="true" />
+    <Property Type="Int32" Name="Sp50To60" Nullable="true" />
+    <Property Type="Int32" Name="Sp60To70" Nullable="true" />
+    <Property Type="Int32" Name="Sp70To80" Nullable="true" />
+    <Property Type="Int32" Name="Sp80To90" Nullable="true" />
+    <Property Type="Int32" Name="Sp90To100" Nullable="true" />
+    <Property Type="Int32" Name="Sp100To110" Nullable="true" />
+    <Property Type="Int32" Name="Sp110To120" Nullable="true" />
+    <Property Type="Int32" Name="Sp120To130" Nullable="true" />
+    <Property Type="Int32" Name="Sp130To140" Nullable="true" />
+    <Property Type="Int32" Name="Sp140To150" Nullable="true" />
+    <Property Type="Int32" Name="Sp150To160" Nullable="true" />
+    <Property Type="Int32" Name="Sp160To200" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+    <Property Type="Double" Name="SpMean" Nullable="true" />
+    <Property Type="Double" Name="Vpp85" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spTCSummaryByLoc_Result">
+    <Property Type="String" Name="SiteID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Date" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="TWP" Nullable="true" />
+    <Property Type="String" Name="Location" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="NumofVolume" Nullable="true" />
+    <Property Type="String" Name="PostedLimit" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Percentile85" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PercentageTrucks" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LegalDesc" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Comment" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="LinkToSummary" Nullable="true" MaxLength="104" />
+    <Property Type="String" Name="LinkToHistory" Nullable="true" MaxLength="226" />
+    <Property Type="String" Name="Road1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Road2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Dir" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="spTCSummaryBySite_Result">
+    <Property Type="String" Name="SiteID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Date" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="TWP" Nullable="true" />
+    <Property Type="String" Name="Location" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="NumofVolume" Nullable="true" />
+    <Property Type="String" Name="PostedLimit" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Percentile85" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PercentageTrucks" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LegalDesc" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Comment" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="LinkToSummary" Nullable="true" MaxLength="104" />
+    <Property Type="String" Name="LinkToHistory" Nullable="true" MaxLength="226" />
+    <Property Type="String" Name="Road1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Road2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Dir" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="spTCSummaryOneBySite_Result">
+    <Property Type="String" Name="SiteID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Date" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="TWP" Nullable="true" />
+    <Property Type="String" Name="Location" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="NumofVolume" Nullable="true" />
+    <Property Type="String" Name="PostedLimit" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Percentile85" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PercentageTrucks" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Comment" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="LegalDesc" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LinktoSummary" Nullable="true" MaxLength="104" />
+    <Property Type="String" Name="LinkToHistory" Nullable="true" MaxLength="226" />
+    <Property Type="String" Name="Road1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Road2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Dir" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="TCAxlesDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lane" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Bound" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStart" Type="DateTime" Precision="3" />
+    <Property Name="TimeEnd" Type="DateTime" Precision="3" />
+    <Property Name="TimeCaptured" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MotorCycles" Type="Int32" />
+    <Property Name="PassengerCars" Type="Int32" />
+    <Property Name="TwoAxleFourTires" Type="Int32" />
+    <Property Name="Buses" Type="Int32" />
+    <Property Name="TwoAxleSixTires" Type="Int32" />
+    <Property Name="ThreeAxleSingleUnitTruck" Type="Int32" />
+    <Property Name="FourOrMoreAxleSignleUnitTruck" Type="Int32" />
+    <Property Name="FourOrLessAxleSingleTrailerTruck" Type="Int32" />
+    <Property Name="FiveAxleSignleTrailerTruck" Type="Int32" />
+    <Property Name="SixOrMoreAxleSignleTrailerTruck" Type="Int32" />
+    <Property Name="FiveLessAxleMultiTrailerTruck" Type="Int32" />
+    <Property Name="SixAxleMultiTrailerTruck" Type="Int32" />
+    <Property Name="SevenMoreAxleMultiTrailerTruck" Type="Int32" />
+    <Property Name="TruckCount" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Total" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="Double" />
+    <Property Name="Vpp85" Type="Double" />
+  </EntityType>
+  <EntityType Name="TCAxlesSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lane" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Bound" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStart" Type="DateTime" Precision="3" />
+    <Property Name="TimeEnd" Type="DateTime" Precision="3" />
+    <Property Name="TimeCaptured" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MotorCycles" Type="Int32" />
+    <Property Name="PassengerCars" Type="Int32" />
+    <Property Name="TwoAxleFourTires" Type="Int32" />
+    <Property Name="Buses" Type="Int32" />
+    <Property Name="TwoAxleSixTires" Type="Int32" />
+    <Property Name="ThreeAxleSingleUnitTruck" Type="Int32" />
+    <Property Name="FourOrMoreAxleSignleUnitTruck" Type="Int32" />
+    <Property Name="FourOrLessAxleSingleTrailerTruck" Type="Int32" />
+    <Property Name="FiveAxleSignleTrailerTruck" Type="Int32" />
+    <Property Name="SixOrMoreAxleSignleTrailerTruck" Type="Int32" />
+    <Property Name="FiveLessAxleMultiTrailerTruck" Type="Int32" />
+    <Property Name="SixAxleMultiTrailerTruck" Type="Int32" />
+    <Property Name="SevenMoreAxleMultiTrailerTruck" Type="Int32" />
+    <Property Name="TruckCount" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Total" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="Double" />
+    <Property Name="Vpp85" Type="Double" />
+  </EntityType>
+  <EntityType Name="TCSpeedDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lane" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Bound" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStart" Type="DateTime" Precision="3" />
+    <Property Name="TimeEnd" Type="DateTime" Precision="3" />
+    <Property Name="TimeCaptured" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sp0To10" Type="Int32" />
+    <Property Name="Sp10To20" Type="Int32" />
+    <Property Name="Sp20To30" Type="Int32" />
+    <Property Name="Sp30To40" Type="Int32" />
+    <Property Name="Sp40To50" Type="Int32" />
+    <Property Name="Sp50To60" Type="Int32" />
+    <Property Name="Sp60To70" Type="Int32" />
+    <Property Name="Sp70To80" Type="Int32" />
+    <Property Name="Sp80To90" Type="Int32" />
+    <Property Name="Sp90To100" Type="Int32" />
+    <Property Name="Sp100To110" Type="Int32" />
+    <Property Name="Sp110To120" Type="Int32" />
+    <Property Name="Sp120To130" Type="Int32" />
+    <Property Name="Sp130To140" Type="Int32" />
+    <Property Name="Sp140To150" Type="Int32" />
+    <Property Name="Sp150To160" Type="Int32" />
+    <Property Name="Sp160To200" Type="Int32" />
+    <Property Name="Total" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="Double" />
+    <Property Name="Vpp85" Type="Double" />
+  </EntityType>
+  <EntityType Name="TCSpeedSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SiteID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lane" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Bound" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStart" Type="DateTime" Precision="3" />
+    <Property Name="TimeEnd" Type="DateTime" Precision="3" />
+    <Property Name="TimeCaptured" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sp0To10" Type="Int32" />
+    <Property Name="Sp10To20" Type="Int32" />
+    <Property Name="Sp20To30" Type="Int32" />
+    <Property Name="Sp30To40" Type="Int32" />
+    <Property Name="Sp40To50" Type="Int32" />
+    <Property Name="Sp50To60" Type="Int32" />
+    <Property Name="Sp60To70" Type="Int32" />
+    <Property Name="Sp70To80" Type="Int32" />
+    <Property Name="Sp80To90" Type="Int32" />
+    <Property Name="Sp90To100" Type="Int32" />
+    <Property Name="Sp100To110" Type="Int32" />
+    <Property Name="Sp110To120" Type="Int32" />
+    <Property Name="Sp120To130" Type="Int32" />
+    <Property Name="Sp130To140" Type="Int32" />
+    <Property Name="Sp140To150" Type="Int32" />
+    <Property Name="Sp150To160" Type="Int32" />
+    <Property Name="Sp160To200" Type="Int32" />
+    <Property Name="Total" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="SpMean" Type="Double" />
+    <Property Name="Vpp85" Type="Double" />
+  </EntityType>
+  <EntityType Name="UserName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TCSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Shape" Type="Geometry" />
+    <Property Name="vchSiteID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LegalDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="calcYearOfCount" Type="Int32" />
+    <Property Name="intTWP" Type="Int32" />
+    <Property Name="Road1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Road2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dir" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SensorID" Type="String" MaxLength="150" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="vchLocation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="dteDateOfCount" Type="DateTime" Precision="3" />
+    <Property Name="intNumofVehicles" Type="Int32" />
+    <Property Name="vchTypeofCounter" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="vchPostedLimit" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="vch85Percentile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TruckCount" Type="Int32" />
+    <Property Name="vchPercentageTrucks" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="LinkToHistory" Type="String" MaxLength="216" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="LinkToSummary" Type="String" MaxLength="94" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="InsertDate" Type="DateTime" Precision="7" />
+    <Property Name="InsertUser" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TrafficCountSensor">
+    <Key>
+      <PropertyRef Name="ogr_fid" />
+    </Key>
+    <Property Name="ogr_fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Shape" Type="Geometry" />
+    <Property Name="road_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="road_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="distance_m" Type="Int32" />
+    <Property Name="linktohistory" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="direction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

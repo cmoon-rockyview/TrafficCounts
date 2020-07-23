@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c0ecab2a-0357-4920-abc4-634a7817ceaf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/TCWS/TCInsert.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TCInsert2.xsd" MetadataType="Schema" ID="e50c9a54-e158-491d-ba21-f8b4fc9b4d03" SourceId="1" SourceUrl="http://localhost/TCWS/TCInsert.svc?xsd=xsd0" />
+    <MetadataFile FileName="TCInsert1.disco" MetadataType="Disco" ID="b93b0596-4386-4450-a4b6-fb4e4f52e82d" SourceId="1" SourceUrl="http://localhost/TCWS/TCInsert.svc?disco" />
+    <MetadataFile FileName="TCInsert1.wsdl" MetadataType="Wsdl" ID="48bc99aa-19a9-4578-8655-8b40e6281cfa" SourceId="1" SourceUrl="http://localhost/TCWS/TCInsert.svc?wsdl" />
+    <MetadataFile FileName="TCInsert21.xsd" MetadataType="Schema" ID="2e21b686-76ed-4b0a-b132-27053ac24a30" SourceId="1" SourceUrl="http://localhost/TCWS/TCInsert.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

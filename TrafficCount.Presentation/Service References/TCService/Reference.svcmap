@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14a1f832-04c6-4107-86ae-20750f621c19" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/TCWS/TCSummary.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TCSummary1.disco" MetadataType="Disco" ID="cf863b7d-bcb9-4f83-9418-b56d3816fd45" SourceId="1" SourceUrl="http://localhost/TCWS/TCSummary.svc?disco" />
+    <MetadataFile FileName="TCSummary4.xsd" MetadataType="Schema" ID="c219418e-1c64-450c-9480-36e7c14e004e" SourceId="1" SourceUrl="http://localhost/TCWS/TCSummary.svc?xsd=xsd3" />
+    <MetadataFile FileName="TCSummary41.xsd" MetadataType="Schema" ID="3441965a-b2b5-4cf3-ad15-83e7a17dde42" SourceId="1" SourceUrl="http://localhost/TCWS/TCSummary.svc?xsd=xsd1" />
+    <MetadataFile FileName="TCSummary1.wsdl" MetadataType="Wsdl" ID="65767489-517c-42dc-a4da-0b6bc95e014d" SourceId="1" SourceUrl="http://localhost/TCWS/TCSummary.svc?wsdl" />
+    <MetadataFile FileName="TCSummary42.xsd" MetadataType="Schema" ID="ab6d2980-4d3a-46b7-838c-e1c2ee4a79a2" SourceId="1" SourceUrl="http://localhost/TCWS/TCSummary.svc?xsd=xsd2" />
+    <MetadataFile FileName="TCSummary43.xsd" MetadataType="Schema" ID="dc2ca307-bfc6-42de-ab21-abe723bfb238" SourceId="1" SourceUrl="http://localhost/TCWS/TCSummary.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

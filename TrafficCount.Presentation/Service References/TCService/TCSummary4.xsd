@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TrafficCount.Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TrafficCount.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfspTCAxlesDetails_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="spTCAxlesDetails_Result" nillable="true" type="tns:spTCAxlesDetails_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfspTCAxlesDetails_Result" nillable="true" type="tns:ArrayOfspTCAxlesDetails_Result" />
+  <xs:complexType name="spTCAxlesDetails_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Buses" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FiveAxleSignleTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FiveLessAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FourOrLessAxleSingleTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FourOrMoreAxleSignleUnitTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Lane" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotorCycles" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PassengerCars" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SevenMoreAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SixAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SixOrMoreAxleSignleTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SpMean" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ThreeAxleSingleUnitTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeCaptured" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Total" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TruckCount" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TwoAxleFourTires" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TwoAxleSixTires" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="spTCAxlesDetails_Result" nillable="true" type="tns:spTCAxlesDetails_Result" />
+  <xs:complexType name="ArrayOfspTCSpeedDetails_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="spTCSpeedDetails_Result" nillable="true" type="tns:spTCSpeedDetails_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfspTCSpeedDetails_Result" nillable="true" type="tns:ArrayOfspTCSpeedDetails_Result" />
+  <xs:complexType name="spTCSpeedDetails_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Lane" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sp0To10" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp100To110" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp10To20" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp110To120" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp120To130" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp130To140" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp140To150" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp150To160" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp160To200" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp20To30" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp30To40" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp40To50" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp50To60" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp60To70" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp70To80" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp80To90" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp90To100" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SpMean" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="TimeCaptured" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Total" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="spTCSpeedDetails_Result" nillable="true" type="tns:spTCSpeedDetails_Result" />
+  <xs:complexType name="ArrayOfspTCSummaryByLoc_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="spTCSummaryByLoc_Result" nillable="true" type="tns:spTCSummaryByLoc_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfspTCSummaryByLoc_Result" nillable="true" type="tns:ArrayOfspTCSummaryByLoc_Result" />
+  <xs:complexType name="spTCSummaryByLoc_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LegalDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkToHistory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkToSummary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumofVolume" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PercentageTrucks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Percentile85" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostedLimit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Road1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Road2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TWP" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="spTCSummaryByLoc_Result" nillable="true" type="tns:spTCSummaryByLoc_Result" />
+  <xs:complexType name="ArrayOfspTCSummaryBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="spTCSummaryBySite_Result" nillable="true" type="tns:spTCSummaryBySite_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfspTCSummaryBySite_Result" nillable="true" type="tns:ArrayOfspTCSummaryBySite_Result" />
+  <xs:complexType name="spTCSummaryBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LegalDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkToHistory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkToSummary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumofVolume" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PercentageTrucks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Percentile85" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostedLimit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Road1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Road2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TWP" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="spTCSummaryBySite_Result" nillable="true" type="tns:spTCSummaryBySite_Result" />
+  <xs:complexType name="ArrayOfspTCSummaryOneBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="spTCSummaryOneBySite_Result" nillable="true" type="tns:spTCSummaryOneBySite_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfspTCSummaryOneBySite_Result" nillable="true" type="tns:ArrayOfspTCSummaryOneBySite_Result" />
+  <xs:complexType name="spTCSummaryOneBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LegalDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkToHistory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinktoSummary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumofVolume" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PercentageTrucks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Percentile85" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostedLimit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Road1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Road2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TWP" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="spTCSummaryOneBySite_Result" nillable="true" type="tns:spTCSummaryOneBySite_Result" />
+  <xs:complexType name="ArrayOfspTCAxlesSummaryBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="spTCAxlesSummaryBySite_Result" nillable="true" type="tns:spTCAxlesSummaryBySite_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfspTCAxlesSummaryBySite_Result" nillable="true" type="tns:ArrayOfspTCAxlesSummaryBySite_Result" />
+  <xs:complexType name="spTCAxlesSummaryBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bound" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buses" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FiveAxleSignleTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FiveLessAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FourOrLessAxleSingleTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FourOrMoreAxleSignleUnitTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Lane" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotorCycles" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PassengerCars" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SevenMoreAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SiteID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SixAxleMultiTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SixOrMoreAxleSignleTrailerTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SpMean" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ThreeAxleSingleUnitTruck" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeCaptured" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Total" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TruckCount" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TwoAxleFourTires" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TwoAxleSixTires" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Vpp85" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="spTCAxlesSummaryBySite_Result" nillable="true" type="tns:spTCAxlesSummaryBySite_Result" />
+  <xs:complexType name="ArrayOfspTCSpeedSummaryBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="spTCSpeedSummaryBySite_Result" nillable="true" type="tns:spTCSpeedSummaryBySite_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfspTCSpeedSummaryBySite_Result" nillable="true" type="tns:ArrayOfspTCSpeedSummaryBySite_Result" />
+  <xs:complexType name="spTCSpeedSummaryBySite_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bound" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lane" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sp0To10" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp100To110" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp10To20" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp110To120" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp120To130" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp130To140" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp140To150" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp150To160" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp160To200" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp20To30" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp30To40" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp40To50" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp50To60" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp60To70" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp70To80" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp80To90" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sp90To100" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SpMean" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="TimeCaptured" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Total" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Vpp85" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="spTCSpeedSummaryBySite_Result" nillable="true" type="tns:spTCSpeedSummaryBySite_Result" />
+</xs:schema>

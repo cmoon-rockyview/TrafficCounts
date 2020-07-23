@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TCSummary" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/TCWS/TCSummary.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/TCWS/TCSummary.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/TCWS/TCSummary.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/TCWS/TCSummary.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/TrafficCount.Domain" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITCSummary_GetUserNameByLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByLogin" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetUserNameByLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCAxlesDetailsBySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCAxlesDetailsBySite" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCAxlesDetailsBySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCAxlesDetailsBySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSpeedDetailsBySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSpeedDetailsBySite" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSpeedDetailsBySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSpeedDetailsBySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSummaryByLoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSummaryByLoc" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSummaryByLoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSummaryByLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSummaryBySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSummaryBySite" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSummaryBySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSummaryBySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSummaryOneBySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSummaryOneBySite" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSummaryOneBySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSummaryOneBySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCAxlesSummaryBySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCAxlesSummaryBySite" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCAxlesSummaryBySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCAxlesSummaryBySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSpeedSummaryBySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSpeedSummaryBySite" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetTCSpeedSummaryBySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTCSpeedSummaryBySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetRoad1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoad1" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetRoad1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoad1Response" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetRoad2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoad2" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetRoad2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoad2Response" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetSiteID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteID" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetSiteID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetXY_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetXY" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetXY_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetXYResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetXYBySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetXYBySite" />
+  </wsdl:message>
+  <wsdl:message name="ITCSummary_GetXYBySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetXYBySiteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITCSummary">
+    <wsdl:operation name="GetUserNameByLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetUserNameByLogin" message="tns:ITCSummary_GetUserNameByLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetUserNameByLoginResponse" message="tns:ITCSummary_GetUserNameByLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCAxlesDetailsBySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetTCAxlesDetailsBySite" message="tns:ITCSummary_GetTCAxlesDetailsBySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetTCAxlesDetailsBySiteResponse" message="tns:ITCSummary_GetTCAxlesDetailsBySite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSpeedDetailsBySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetTCSpeedDetailsBySite" message="tns:ITCSummary_GetTCSpeedDetailsBySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetTCSpeedDetailsBySiteResponse" message="tns:ITCSummary_GetTCSpeedDetailsBySite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSummaryByLoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetTCSummaryByLoc" message="tns:ITCSummary_GetTCSummaryByLoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetTCSummaryByLocResponse" message="tns:ITCSummary_GetTCSummaryByLoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSummaryBySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetTCSummaryBySite" message="tns:ITCSummary_GetTCSummaryBySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetTCSummaryBySiteResponse" message="tns:ITCSummary_GetTCSummaryBySite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSummaryOneBySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetTCSummaryOneBySite" message="tns:ITCSummary_GetTCSummaryOneBySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetTCSummaryOneBySiteResponse" message="tns:ITCSummary_GetTCSummaryOneBySite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCAxlesSummaryBySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetTCAxlesSummaryBySite" message="tns:ITCSummary_GetTCAxlesSummaryBySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetTCAxlesSummaryBySiteResponse" message="tns:ITCSummary_GetTCAxlesSummaryBySite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSpeedSummaryBySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetTCSpeedSummaryBySite" message="tns:ITCSummary_GetTCSpeedSummaryBySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetTCSpeedSummaryBySiteResponse" message="tns:ITCSummary_GetTCSpeedSummaryBySite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoad1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetRoad1" message="tns:ITCSummary_GetRoad1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetRoad1Response" message="tns:ITCSummary_GetRoad1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoad2">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetRoad2" message="tns:ITCSummary_GetRoad2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetRoad2Response" message="tns:ITCSummary_GetRoad2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetSiteID" message="tns:ITCSummary_GetSiteID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetSiteIDResponse" message="tns:ITCSummary_GetSiteID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXY">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetXY" message="tns:ITCSummary_GetXY_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetXYResponse" message="tns:ITCSummary_GetXY_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXYBySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITCSummary/GetXYBySite" message="tns:ITCSummary_GetXYBySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITCSummary/GetXYBySiteResponse" message="tns:ITCSummary_GetXYBySite_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITCSummary" type="tns:ITCSummary">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserNameByLogin">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetUserNameByLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCAxlesDetailsBySite">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetTCAxlesDetailsBySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSpeedDetailsBySite">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetTCSpeedDetailsBySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSummaryByLoc">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetTCSummaryByLoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSummaryBySite">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetTCSummaryBySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSummaryOneBySite">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetTCSummaryOneBySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCAxlesSummaryBySite">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetTCAxlesSummaryBySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTCSpeedSummaryBySite">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetTCSpeedSummaryBySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoad1">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetRoad1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoad2">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetRoad2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteID">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetSiteID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXY">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetXY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXYBySite">
+      <soap:operation soapAction="http://tempuri.org/ITCSummary/GetXYBySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TCSummary">
+    <wsdl:port name="BasicHttpBinding_ITCSummary" binding="tns:BasicHttpBinding_ITCSummary">
+      <soap:address location="http://localhost/TCWS/TCSummary.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
